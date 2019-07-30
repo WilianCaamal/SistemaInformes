@@ -34,38 +34,39 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
-            //
+            // 
             // marqueeProgressBarControl1
-            //
+            // 
             this.marqueeProgressBarControl1.EditValue = 0;
             this.marqueeProgressBarControl1.Location = new System.Drawing.Point(23, 231);
             this.marqueeProgressBarControl1.Name = "marqueeProgressBarControl1";
             this.marqueeProgressBarControl1.Size = new System.Drawing.Size(404, 12);
             this.marqueeProgressBarControl1.TabIndex = 5;
-            //
+            // 
             // labelControl1
-            //
+            // 
             this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.labelControl1.Location = new System.Drawing.Point(23, 286);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(115, 13);
+            this.labelControl1.Size = new System.Drawing.Size(47, 13);
             this.labelControl1.TabIndex = 6;
             this.labelControl1.Text = "Copyright";
-            //
+            // 
             // labelControl2
-            //
+            // 
             this.labelControl2.Location = new System.Drawing.Point(23, 206);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(50, 13);
+            this.labelControl2.Size = new System.Drawing.Size(55, 13);
             this.labelControl2.TabIndex = 7;
-            this.labelControl2.Text = "Starting...";
-            //
+            this.labelControl2.Text = "Iniciando...";
+            // 
             // pictureEdit2
-            //
+            // 
             this.pictureEdit2.EditValue = ((object)(resources.GetObject("pictureEdit2.EditValue")));
             this.pictureEdit2.Location = new System.Drawing.Point(12, 12);
             this.pictureEdit2.Name = "pictureEdit2";
@@ -76,9 +77,9 @@
             this.pictureEdit2.Properties.ShowMenu = false;
             this.pictureEdit2.Size = new System.Drawing.Size(426, 180);
             this.pictureEdit2.TabIndex = 9;
-            //
+            // 
             // pictureEdit1
-            //
+            // 
             this.pictureEdit1.EditValue = ((object)(resources.GetObject("pictureEdit1.EditValue")));
             this.pictureEdit1.Location = new System.Drawing.Point(278, 266);
             this.pictureEdit1.Name = "pictureEdit1";
@@ -89,24 +90,57 @@
             this.pictureEdit1.Properties.ShowMenu = false;
             this.pictureEdit1.Size = new System.Drawing.Size(160, 48);
             this.pictureEdit1.TabIndex = 8;
-            //
-            // SplashScreen
-            //
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl3.Appearance.BackColor2 = System.Drawing.Color.Transparent;
+            this.labelControl3.Appearance.BorderColor = System.Drawing.Color.Transparent;
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 25F, System.Drawing.FontStyle.Bold);
+            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.labelControl3.Appearance.Options.UseBackColor = true;
+            this.labelControl3.Appearance.Options.UseBorderColor = true;
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseForeColor = true;
+            this.labelControl3.Appearance.Options.UseTextOptions = true;
+            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.labelControl3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.labelControl3.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.Wrap;
+            this.labelControl3.AppearanceDisabled.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl3.AppearanceDisabled.BackColor2 = System.Drawing.Color.Transparent;
+            this.labelControl3.AppearanceDisabled.Options.UseBackColor = true;
+            this.labelControl3.AppearanceHovered.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl3.AppearanceHovered.BackColor2 = System.Drawing.Color.Transparent;
+            this.labelControl3.AppearanceHovered.Options.UseBackColor = true;
+            this.labelControl3.AppearancePressed.BackColor = System.Drawing.Color.Transparent;
+            this.labelControl3.AppearancePressed.BackColor2 = System.Drawing.Color.Transparent;
+            this.labelControl3.AppearancePressed.Options.UseBackColor = true;
+            this.labelControl3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelControl3.Location = new System.Drawing.Point(23, 82);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(346, 40);
+            this.labelControl3.TabIndex = 10;
+            this.labelControl3.Text = "Sistema de Informes";
+            // 
+            // SplashBienvenida
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 320);
+            this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.pictureEdit2);
             this.Controls.Add(this.pictureEdit1);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.marqueeProgressBarControl1);
-            this.Name = "Form1";
+            this.Name = "SplashBienvenida";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.marqueeProgressBarControl1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -116,5 +150,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }
