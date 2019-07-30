@@ -1,6 +1,6 @@
 ﻿namespace SistemaInformes
 {
-    partial class Form1
+    partial class FrmPrincipal
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraSplashScreen.SplashScreenManager SplashManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::SistemaInformes.SplashBienvenida), true, false);
             this.SuspendLayout();
             // 
-            // Form1
+            // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 278);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(290, 268);
+            this.Name = "FrmPrincipal";
+            this.Text = "FrmPrincipal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
     }
 }
-
