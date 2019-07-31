@@ -21,13 +21,12 @@ namespace SistemaInformes
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-          
+            
             Thread.Sleep(3000);
             this.WindowState = FormWindowState.Maximized;
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();
             frmLogin.Focus();
         }
-
     }
 }
