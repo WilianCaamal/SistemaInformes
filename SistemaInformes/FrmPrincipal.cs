@@ -55,5 +55,11 @@ namespace SistemaInformes
             FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios();
             HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Normal);
         }
+
+        private void BtnDocumentos_Click(object sender, EventArgs e)
+        {
+            FrmConfigDocs frmConfigDocs = new FrmConfigDocs();
+            HelperWindows.OpenForm(frmConfigDocs, HelperWindows.ModeOpen.Normal);
+        }
     }
 }

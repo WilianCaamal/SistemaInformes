@@ -51,7 +51,8 @@
             this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.BtnServidor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.BtnImpresora = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.BtnDocumentos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.bsUsuario = new DevExpress.XtraBars.BarStaticItem();
@@ -75,7 +76,7 @@
             this.accordionControlElement11});
             this.MenuAccordeon.Location = new System.Drawing.Point(0, 0);
             this.MenuAccordeon.Name = "MenuAccordeon";
-            this.MenuAccordeon.Size = new System.Drawing.Size(205, 333);
+            this.MenuAccordeon.Size = new System.Drawing.Size(205, 336);
             this.MenuAccordeon.TabIndex = 1;
             this.MenuAccordeon.Text = "accordionControl1";
             this.MenuAccordeon.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
@@ -180,7 +181,8 @@
             // 
             this.accordionControlElement11.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.BtnServidor,
-            this.accordionControlElement13});
+            this.BtnImpresora,
+            this.BtnDocumentos});
             this.accordionControlElement11.Expanded = true;
             this.accordionControlElement11.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.maintenance_24px;
             this.accordionControlElement11.Name = "accordionControlElement11";
@@ -197,12 +199,20 @@
             this.BtnServidor.Text = "Servidor";
             this.BtnServidor.Click += new System.EventHandler(this.BtnServidor_Click);
             // 
-            // accordionControlElement13
+            // BtnImpresora
             // 
-            this.accordionControlElement13.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.print_24px;
-            this.accordionControlElement13.Name = "accordionControlElement13";
-            this.accordionControlElement13.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement13.Text = "Impresora";
+            this.BtnImpresora.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.print_24px;
+            this.BtnImpresora.Name = "BtnImpresora";
+            this.BtnImpresora.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.BtnImpresora.Text = "Impresora";
+            // 
+            // BtnDocumentos
+            // 
+            this.BtnDocumentos.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.overview_pages_2_24px;
+            this.BtnDocumentos.Name = "BtnDocumentos";
+            this.BtnDocumentos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.BtnDocumentos.Text = "Documentos";
+            this.BtnDocumentos.Click += new System.EventHandler(this.BtnDocumentos_Click);
             // 
             // barManager1
             // 
@@ -252,15 +262,15 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(699, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(707, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 333);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 336);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(699, 25);
+            this.barDockControlBottom.Size = new System.Drawing.Size(707, 22);
             // 
             // barDockControlLeft
             // 
@@ -268,15 +278,15 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 333);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 336);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(699, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(707, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 333);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 336);
             // 
             // bar1
             // 
@@ -290,7 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 358);
+            this.ClientSize = new System.Drawing.Size(707, 358);
             this.Controls.Add(this.MenuAccordeon);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -324,7 +334,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
         private DevExpress.XtraBars.Navigation.AccordionControlElement BtnServidor;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement13;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement BtnImpresora;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar3;
         private DevExpress.XtraBars.BarStaticItem bsUsuario;
@@ -334,5 +344,6 @@
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraBars.BarStaticItem bsImpresora;
         private DevExpress.XtraBars.Bar bar1;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement BtnDocumentos;
     }
 }

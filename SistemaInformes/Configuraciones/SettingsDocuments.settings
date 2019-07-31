@@ -3,13 +3,13 @@
   <Profiles />
   <Settings>
     <Setting Name="PathReportes" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">C:\Users\wilia\Documents</Value>
     </Setting>
     <Setting Name="PathInfornes" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">C:\Users\wilia\Documents</Value>
     </Setting>
     <Setting Name="PathNominas" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">C:\Users\wilia\Documents</Value>
     </Setting>
   </Settings>
 </SettingsFile>

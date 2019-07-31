@@ -25,7 +25,7 @@ namespace SistemaInformes.Configuraciones {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\wilia\\Documents")]
         public string PathReportes {
             get {
                 return ((string)(this["PathReportes"]));
@@ -37,7 +37,7 @@ namespace SistemaInformes.Configuraciones {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\wilia\\Documents")]
         public string PathInfornes {
             get {
                 return ((string)(this["PathInfornes"]));
@@ -49,7 +49,7 @@ namespace SistemaInformes.Configuraciones {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\wilia\\Documents")]
         public string PathNominas {
             get {
                 return ((string)(this["PathNominas"]));

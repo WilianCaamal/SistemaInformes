@@ -20,14 +20,16 @@ namespace SistemaInformes.Util
             {
                 switch (modo)
                 {
+                    case ModeOpen.Normal:
+                        xtraForm.Show();
+                        break;
                     case ModeOpen.Dialog:
                         xtraForm.ShowDialog();
                         break;
                     default:
-                        xtraForm.Show();
+                        
                         break;
                 }
-                xtraForm.Show();
             }
         }
         public enum ModeOpen{

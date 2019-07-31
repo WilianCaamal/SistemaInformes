@@ -63,6 +63,16 @@ namespace SistemaInformes {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap administrative_tools_48px {
+            get {
+                object obj = ResourceManager.GetObject("administrative_tools_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ledger_48px {
             get {
                 object obj = ResourceManager.GetObject("ledger_48px", resourceCulture);
