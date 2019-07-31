@@ -24,13 +24,14 @@ namespace SistemaInformes
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            
+            LoadConfiguration();
             Thread.Sleep(2000);
-            this.WindowState = FormWindowState.Maximized;
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();
             frmLogin.Focus();
         }
+
+        #region Botones 
 
         private void BtnApoyos_Click(object sender, EventArgs e)
         {
@@ -60,6 +61,27 @@ namespace SistemaInformes
         {
             FrmConfigDocs frmConfigDocs = new FrmConfigDocs();
             HelperWindows.OpenForm(frmConfigDocs, HelperWindows.ModeOpen.Normal);
+        }
+
+        #endregion
+
+        #region Metodos
+
+        #endregion
+
+        #region Configuracion 
+
+        public void LoadConfiguration()
+        {
+            BsImpresora.Caption = $"Impresora : {SettingsPrinter.Default.NamePrinter}";
+            Timer.Start();
+        }
+
+        #endregion
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            BsHora.Caption = DateTime.Now.ToLongTimeString();
         }
     }
 }

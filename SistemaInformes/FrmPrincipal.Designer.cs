@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager SplashManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::SistemaInformes.SplashBienvenida), true, false);
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
             this.MenuAccordeon = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.BtnApoyos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -53,17 +53,19 @@
             this.BtnServidor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.BtnImpresora = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.BtnDocumentos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.BarManager = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
-            this.bsUsuario = new DevExpress.XtraBars.BarStaticItem();
-            this.bsImpresora = new DevExpress.XtraBars.BarStaticItem();
+            this.BsUsuario = new DevExpress.XtraBars.BarStaticItem();
+            this.BsImpresora = new DevExpress.XtraBars.BarStaticItem();
+            this.BsHora = new DevExpress.XtraBars.BarStaticItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.bar1 = new DevExpress.XtraBars.Bar();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.MenuAccordeon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarManager)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuAccordeon
@@ -90,9 +92,9 @@
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.dossier_folder_24px;
             this.accordionControlElement1.Name = "accordionControlElement1";
-            toolTipTitleItem1.Text = "Catalogos";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.accordionControlElement1.SuperTip = superToolTip1;
+            toolTipTitleItem5.Text = "Catalogos";
+            superToolTip5.Items.Add(toolTipTitleItem5);
+            this.accordionControlElement1.SuperTip = superToolTip5;
             this.accordionControlElement1.Text = "Catalogos";
             // 
             // BtnApoyos
@@ -132,9 +134,9 @@
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)});
             this.accordionControlElement2.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.overview_pages_2_24px;
             this.accordionControlElement2.Name = "accordionControlElement2";
-            toolTipTitleItem2.Text = "Informes";
-            superToolTip2.Items.Add(toolTipTitleItem2);
-            this.accordionControlElement2.SuperTip = superToolTip2;
+            toolTipTitleItem6.Text = "Informes";
+            superToolTip6.Items.Add(toolTipTitleItem6);
+            this.accordionControlElement2.SuperTip = superToolTip6;
             this.accordionControlElement2.Text = "Informes";
             // 
             // accordionControlElement7
@@ -158,9 +160,9 @@
             this.accordionControlElement10});
             this.accordionControlElement3.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.estimate_24px;
             this.accordionControlElement3.Name = "accordionControlElement3";
-            toolTipTitleItem3.Text = "Nominas";
-            superToolTip3.Items.Add(toolTipTitleItem3);
-            this.accordionControlElement3.SuperTip = superToolTip3;
+            toolTipTitleItem7.Text = "Nominas";
+            superToolTip7.Items.Add(toolTipTitleItem7);
+            this.accordionControlElement3.SuperTip = superToolTip7;
             this.accordionControlElement3.Text = "Nominas";
             // 
             // accordionControlElement9
@@ -186,9 +188,9 @@
             this.accordionControlElement11.Expanded = true;
             this.accordionControlElement11.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.maintenance_24px;
             this.accordionControlElement11.Name = "accordionControlElement11";
-            toolTipTitleItem4.Text = "Configuración";
-            superToolTip4.Items.Add(toolTipTitleItem4);
-            this.accordionControlElement11.SuperTip = superToolTip4;
+            toolTipTitleItem8.Text = "Configuración";
+            superToolTip8.Items.Add(toolTipTitleItem8);
+            this.accordionControlElement11.SuperTip = superToolTip8;
             this.accordionControlElement11.Text = "Configuración";
             // 
             // BtnServidor
@@ -214,20 +216,21 @@
             this.BtnDocumentos.Text = "Documentos";
             this.BtnDocumentos.Click += new System.EventHandler(this.BtnDocumentos_Click);
             // 
-            // barManager1
+            // BarManager
             // 
-            this.barManager1.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.BarManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
             this.bar3});
-            this.barManager1.DockControls.Add(this.barDockControlTop);
-            this.barManager1.DockControls.Add(this.barDockControlBottom);
-            this.barManager1.DockControls.Add(this.barDockControlLeft);
-            this.barManager1.DockControls.Add(this.barDockControlRight);
-            this.barManager1.Form = this;
-            this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.bsUsuario,
-            this.bsImpresora});
-            this.barManager1.MaxItemId = 3;
-            this.barManager1.StatusBar = this.bar3;
+            this.BarManager.DockControls.Add(this.barDockControlTop);
+            this.BarManager.DockControls.Add(this.barDockControlBottom);
+            this.BarManager.DockControls.Add(this.barDockControlLeft);
+            this.BarManager.DockControls.Add(this.barDockControlRight);
+            this.BarManager.Form = this;
+            this.BarManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.BsUsuario,
+            this.BsImpresora,
+            this.BsHora});
+            this.BarManager.MaxItemId = 4;
+            this.BarManager.StatusBar = this.bar3;
             // 
             // bar3
             // 
@@ -237,31 +240,39 @@
             this.bar3.DockRow = 0;
             this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
             this.bar3.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.bsUsuario),
-            new DevExpress.XtraBars.LinkPersistInfo(this.bsImpresora)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.BsUsuario),
+            new DevExpress.XtraBars.LinkPersistInfo(this.BsImpresora),
+            new DevExpress.XtraBars.LinkPersistInfo(this.BsHora)});
             this.bar3.OptionsBar.AllowQuickCustomization = false;
             this.bar3.OptionsBar.DrawDragBorder = false;
             this.bar3.OptionsBar.UseWholeRow = true;
             this.bar3.Text = "Barra de estado";
             // 
-            // bsUsuario
+            // BsUsuario
             // 
-            this.bsUsuario.Caption = "Usuario:";
-            this.bsUsuario.Id = 0;
-            this.bsUsuario.Name = "bsUsuario";
+            this.BsUsuario.Caption = "Usuario:";
+            this.BsUsuario.Id = 0;
+            this.BsUsuario.Name = "BsUsuario";
             // 
-            // bsImpresora
+            // BsImpresora
             // 
-            this.bsImpresora.Caption = "Impresora:";
-            this.bsImpresora.Id = 1;
-            this.bsImpresora.Name = "bsImpresora";
+            this.BsImpresora.Caption = "Impresora:";
+            this.BsImpresora.Id = 1;
+            this.BsImpresora.Name = "BsImpresora";
+            // 
+            // BsHora
+            // 
+            this.BsHora.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.BsHora.Caption = "Hora";
+            this.BsHora.Id = 3;
+            this.BsHora.Name = "BsHora";
             // 
             // barDockControlTop
             // 
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Manager = this.BarManager;
             this.barDockControlTop.Size = new System.Drawing.Size(707, 0);
             // 
             // barDockControlBottom
@@ -269,7 +280,7 @@
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 336);
-            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Manager = this.BarManager;
             this.barDockControlBottom.Size = new System.Drawing.Size(707, 22);
             // 
             // barDockControlLeft
@@ -277,7 +288,7 @@
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Manager = this.BarManager;
             this.barDockControlLeft.Size = new System.Drawing.Size(0, 336);
             // 
             // barDockControlRight
@@ -285,7 +296,7 @@
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(707, 0);
-            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Manager = this.BarManager;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 336);
             // 
             // bar1
@@ -295,6 +306,10 @@
             this.bar1.DockRow = 0;
             this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar1.Text = "Personalizada 3";
+            // 
+            // Timer
+            // 
+            this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // FrmPrincipal
             // 
@@ -311,9 +326,10 @@
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Informes";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MenuAccordeon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BarManager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -335,15 +351,17 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
         private DevExpress.XtraBars.Navigation.AccordionControlElement BtnServidor;
         private DevExpress.XtraBars.Navigation.AccordionControlElement BtnImpresora;
-        private DevExpress.XtraBars.BarManager barManager1;
+        private DevExpress.XtraBars.BarManager BarManager;
         private DevExpress.XtraBars.Bar bar3;
-        private DevExpress.XtraBars.BarStaticItem bsUsuario;
+        private DevExpress.XtraBars.BarStaticItem BsUsuario;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraBars.BarStaticItem bsImpresora;
+        private DevExpress.XtraBars.BarStaticItem BsImpresora;
         private DevExpress.XtraBars.Bar bar1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement BtnDocumentos;
+        private DevExpress.XtraBars.BarStaticItem BsHora;
+        private System.Windows.Forms.Timer Timer;
     }
 }
