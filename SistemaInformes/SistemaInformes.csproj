@@ -111,6 +111,9 @@
     <EmbeddedResource Include="Catalogos\FrmApoyos.resx">
       <DependentUpon>FrmApoyos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmPredios.resx">
+      <DependentUpon>FrmPredios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Configuraciones\FrmConfigDB.resx">
       <DependentUpon>FrmConfigDB.cs</DependentUpon>
     </EmbeddedResource>
@@ -211,6 +214,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ledger_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_file_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_property_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
