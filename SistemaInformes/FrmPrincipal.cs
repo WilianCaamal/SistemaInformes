@@ -28,5 +28,6 @@ namespace SistemaInformes
             frmLogin.ShowDialog();
             frmLogin.Focus();
         }
+
     }
 }

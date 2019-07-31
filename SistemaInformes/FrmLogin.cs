@@ -25,7 +25,7 @@ namespace SistemaInformes
 
         private void BtnAcceder_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)

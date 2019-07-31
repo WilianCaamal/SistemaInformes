@@ -37,6 +37,7 @@
     <Reference Include="DevExpress.Data.v18.2" />
     <Reference Include="DevExpress.Utils.v18.2" />
     <Reference Include="DevExpress.Sparkline.v18.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v18.2" />
     <Reference Include="DevExpress.Printing.v18.2.Core" />
     <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -121,6 +122,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ok_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dossier_folder_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintenance_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_marker_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\groups_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\overview_pages_2_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_details_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accounting_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estimate_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledger_24px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
