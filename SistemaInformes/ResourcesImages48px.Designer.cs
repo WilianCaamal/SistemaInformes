@@ -22,14 +22,14 @@ namespace SistemaInformes {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ResourcesImagenes48px {
+    internal class ResourcesImages48px {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResourcesImagenes48px() {
+        internal ResourcesImages48px() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace SistemaInformes {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SistemaInformes.ResourcesImagenes48px", typeof(ResourcesImagenes48px).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SistemaInformes.ResourcesImages48px", typeof(ResourcesImages48px).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -57,6 +57,16 @@ namespace SistemaInformes {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ledger_48px {
+            get {
+                object obj = ResourceManager.GetObject("ledger_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

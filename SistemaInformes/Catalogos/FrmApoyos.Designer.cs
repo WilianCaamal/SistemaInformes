@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnGuardar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnEditar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnEliminar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnCancelar = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -95,10 +95,10 @@
             this.barManager1.DockControls.Add(this.barDockControlRight);
             this.barManager1.Form = this;
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barButtonItem4});
+            this.BtnGuardar,
+            this.BtnCancelar,
+            this.BtnEditar,
+            this.BtnEliminar});
             this.barManager1.MaxItemId = 4;
             this.barManager1.StatusBar = this.bar3;
             // 
@@ -110,46 +110,46 @@
             this.bar3.DockRow = 0;
             this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
             this.bar3.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem4, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.BtnGuardar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.BtnEditar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.BtnEliminar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.BtnCancelar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar3.OptionsBar.AllowQuickCustomization = false;
             this.bar3.OptionsBar.DrawDragBorder = false;
             this.bar3.OptionsBar.UseWholeRow = true;
             this.bar3.Text = "Barra de estado";
             // 
-            // barButtonItem1
+            // BtnGuardar
             // 
-            this.barButtonItem1.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barButtonItem1.Caption = "Guardar";
-            this.barButtonItem1.Id = 0;
-            this.barButtonItem1.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
-            this.barButtonItem1.Name = "barButtonItem1";
+            this.BtnGuardar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.BtnGuardar.Caption = "Guardar";
+            this.BtnGuardar.Id = 0;
+            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
+            this.BtnGuardar.Name = "BtnGuardar";
             // 
-            // barButtonItem3
+            // BtnEditar
             // 
-            this.barButtonItem3.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barButtonItem3.Caption = "Editar";
-            this.barButtonItem3.Id = 2;
-            this.barButtonItem3.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.edit_property_24px;
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.BtnEditar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.BtnEditar.Caption = "Editar";
+            this.BtnEditar.Id = 2;
+            this.BtnEditar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.edit_property_24px;
+            this.BtnEditar.Name = "BtnEditar";
             // 
-            // barButtonItem4
+            // BtnEliminar
             // 
-            this.barButtonItem4.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barButtonItem4.Caption = "Eliminar";
-            this.barButtonItem4.Id = 3;
-            this.barButtonItem4.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.delete_24px;
-            this.barButtonItem4.Name = "barButtonItem4";
+            this.BtnEliminar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.BtnEliminar.Caption = "Eliminar";
+            this.BtnEliminar.Id = 3;
+            this.BtnEliminar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.delete_24px;
+            this.BtnEliminar.Name = "BtnEliminar";
             // 
-            // barButtonItem2
+            // BtnCancelar
             // 
-            this.barButtonItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barButtonItem2.Caption = "Cancelar";
-            this.barButtonItem2.Id = 1;
-            this.barButtonItem2.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
-            this.barButtonItem2.Name = "barButtonItem2";
+            this.BtnCancelar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.BtnCancelar.Caption = "Cancelar";
+            this.BtnCancelar.Id = 1;
+            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnCancelar.Name = "BtnCancelar";
             // 
             // barDockControlTop
             // 
@@ -196,10 +196,10 @@
             // 
             // xtraTabControl1
             // 
-            this.xtraTabControl1.Location = new System.Drawing.Point(12, 40);
+            this.xtraTabControl1.Location = new System.Drawing.Point(12, 74);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(668, 327);
+            this.xtraTabControl1.Size = new System.Drawing.Size(668, 293);
             this.xtraTabControl1.TabIndex = 5;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -209,7 +209,7 @@
             // 
             this.xtraTabPage1.Controls.Add(this.groupControl1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(662, 299);
+            this.xtraTabPage1.Size = new System.Drawing.Size(662, 265);
             this.xtraTabPage1.Text = "Programa";
             // 
             // groupControl1
@@ -357,7 +357,7 @@
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(662, 299);
+            this.xtraTabPage2.Size = new System.Drawing.Size(662, 265);
             this.xtraTabPage2.Text = "Actividades";
             // 
             // Root
@@ -376,19 +376,20 @@
             this.simpleLabelItem1.AllowHotTrack = false;
             this.simpleLabelItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.ledger_24px;
+            this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.ResourcesImages48px.ledger_48px;
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
-            this.simpleLabelItem1.Size = new System.Drawing.Size(672, 28);
-            this.simpleLabelItem1.Text = "Apoyos";
-            this.simpleLabelItem1.TextSize = new System.Drawing.Size(99, 24);
+            this.simpleLabelItem1.Size = new System.Drawing.Size(672, 62);
+            this.simpleLabelItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.simpleLabelItem1.Text = "Apoyo";
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(113, 48);
             // 
             // layoutControlItem8
             // 
             this.layoutControlItem8.Control = this.xtraTabControl1;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 62);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(672, 331);
+            this.layoutControlItem8.Size = new System.Drawing.Size(672, 297);
             this.layoutControlItem8.Text = "c";
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
@@ -408,7 +409,6 @@
             this.Name = "FrmApoyos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Apoyos";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -441,8 +441,8 @@
         #endregion
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem BtnGuardar;
+        private DevExpress.XtraBars.BarButtonItem BtnCancelar;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
@@ -467,7 +467,7 @@
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem8;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem BtnEditar;
+        private DevExpress.XtraBars.BarButtonItem BtnEliminar;
     }
 }

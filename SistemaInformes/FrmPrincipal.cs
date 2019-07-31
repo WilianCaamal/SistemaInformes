@@ -11,6 +11,7 @@ using DevExpress.XtraEditors;
 using System.Threading;
 using SistemaInformes.Catalogos;
 using SistemaInformes.Configuraciones;
+using SistemaInformes.Util;
 
 namespace SistemaInformes
 {
@@ -34,27 +35,25 @@ namespace SistemaInformes
         private void BtnApoyos_Click(object sender, EventArgs e)
         {
             FrmApoyos frmApoyos = new FrmApoyos();
-            frmApoyos.MdiParent = this;
-            frmApoyos.Show();
+            HelperWindows.OpenForm(frmApoyos,HelperWindows.ModeOpen.Normal);
         }
 
         private void BtnPredios_Click(object sender, EventArgs e)
         {
             FrmPredios frmPredios = new FrmPredios();
-            frmPredios.MdiParent = this;
-            frmPredios.Show();
+            HelperWindows.OpenForm(frmPredios, HelperWindows.ModeOpen.Normal);
         }
 
         private void BtnServidor_Click(object sender, EventArgs e)
         {
             FrmConfigDB frmConfigDB = new FrmConfigDB();
-            frmConfigDB.ShowDialog();
+            HelperWindows.OpenForm(frmConfigDB, HelperWindows.ModeOpen.Dialog);
         }
 
         private void BtnBeneficiarios_Click(object sender, EventArgs e)
         {
             FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios();
-            frmBeneficiarios.Show();
+            HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Normal);
         }
     }
 }

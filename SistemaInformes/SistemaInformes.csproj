@@ -92,6 +92,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>SettingsConnection.settings</DependentUpon>
     </Compile>
+    <Compile Include="Configuraciones\SettingsDocuments.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>SettingsDocuments.settings</DependentUpon>
+    </Compile>
     <Compile Include="Configuraciones\SettingsPrinter.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -111,10 +116,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResourcesImagenes48px.Designer.cs">
+    <Compile Include="ResourcesImages48px.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ResourcesImagenes48px.resx</DependentUpon>
+      <DependentUpon>ResourcesImages48px.resx</DependentUpon>
     </Compile>
     <Compile Include="ResourcesImages24px.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -127,6 +132,7 @@
     <Compile Include="SplashBienvenida.Designer.cs">
       <DependentUpon>SplashBienvenida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Util\HelperWindows.cs" />
     <EmbeddedResource Include="Catalogos\FrmApoyos.resx">
       <DependentUpon>FrmApoyos.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,9 +161,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ResourcesImagenes48px.resx">
+    <EmbeddedResource Include="ResourcesImages48px.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResourcesImagenes48px.Designer.cs</LastGenOutput>
+      <LastGenOutput>ResourcesImages48px.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="ResourcesImages24px.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -170,6 +176,10 @@
     <None Include="Configuraciones\SettingsConnection.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>SettingsConnection.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Configuraciones\SettingsDocuments.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>SettingsDocuments.Designer.cs</LastGenOutput>
     </None>
     <None Include="Configuraciones\SettingsPrinter.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -255,6 +265,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ledger_48px.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\map_marker_48px.png" />
