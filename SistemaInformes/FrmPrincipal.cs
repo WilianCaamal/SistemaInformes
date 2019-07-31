@@ -50,5 +50,11 @@ namespace SistemaInformes
             FrmConfigDB frmConfigDB = new FrmConfigDB();
             frmConfigDB.ShowDialog();
         }
+
+        private void BtnBeneficiarios_Click(object sender, EventArgs e)
+        {
+            FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios();
+            frmBeneficiarios.Show();
+        }
     }
 }

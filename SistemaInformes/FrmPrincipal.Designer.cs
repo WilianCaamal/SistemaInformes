@@ -116,6 +116,7 @@
             this.BtnBeneficiarios.Name = "BtnBeneficiarios";
             this.BtnBeneficiarios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.BtnBeneficiarios.Text = "Beneficiarios";
+            this.BtnBeneficiarios.Click += new System.EventHandler(this.BtnBeneficiarios_Click);
             // 
             // accordionControlElement2
             // 

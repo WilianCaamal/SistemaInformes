@@ -32,6 +32,8 @@
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -57,8 +59,6 @@
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -126,6 +126,22 @@
             this.barButtonItem1.Id = 0;
             this.barButtonItem1.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
             this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barButtonItem3.Caption = "Editar";
+            this.barButtonItem3.Id = 2;
+            this.barButtonItem3.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.edit_property_24px;
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barButtonItem4.Caption = "Eliminar";
+            this.barButtonItem4.Id = 3;
+            this.barButtonItem4.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.delete_24px;
+            this.barButtonItem4.Name = "barButtonItem4";
             // 
             // barButtonItem2
             // 
@@ -376,22 +392,6 @@
             this.layoutControlItem8.Text = "c";
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barButtonItem3.Caption = "Editar";
-            this.barButtonItem3.Id = 2;
-            this.barButtonItem3.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.edit_property_24px;
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // barButtonItem4
-            // 
-            this.barButtonItem4.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barButtonItem4.Caption = "Eliminar";
-            this.barButtonItem4.Id = 3;
-            this.barButtonItem4.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.delete_24px;
-            this.barButtonItem4.Name = "barButtonItem4";
             // 
             // FrmApoyos
             // 
