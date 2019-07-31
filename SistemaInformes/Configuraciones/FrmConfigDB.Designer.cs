@@ -29,34 +29,34 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.TxtServer = new DevExpress.XtraEditors.TextEdit();
+            this.TxtDataBase = new DevExpress.XtraEditors.TextEdit();
+            this.TxtUser = new DevExpress.XtraEditors.TextEdit();
+            this.BtnGuardar = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtPassword = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
-            this.TxtServer = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.TxtDataBase = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.TxtUser = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.BtnGuardar = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.BtnCancelar = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.TxtPassword = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtServer.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDataBase.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtUser.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPassword.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtServer.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDataBase.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtUser.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPassword.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -75,6 +75,60 @@
             this.layoutControl1.Size = new System.Drawing.Size(255, 240);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
+            // 
+            // TxtServer
+            // 
+            this.TxtServer.Location = new System.Drawing.Point(88, 57);
+            this.TxtServer.Name = "TxtServer";
+            this.TxtServer.Size = new System.Drawing.Size(150, 20);
+            this.TxtServer.StyleController = this.layoutControl1;
+            this.TxtServer.TabIndex = 4;
+            // 
+            // TxtDataBase
+            // 
+            this.TxtDataBase.Location = new System.Drawing.Point(88, 89);
+            this.TxtDataBase.Name = "TxtDataBase";
+            this.TxtDataBase.Size = new System.Drawing.Size(150, 20);
+            this.TxtDataBase.StyleController = this.layoutControl1;
+            this.TxtDataBase.TabIndex = 5;
+            // 
+            // TxtUser
+            // 
+            this.TxtUser.Location = new System.Drawing.Point(88, 121);
+            this.TxtUser.Name = "TxtUser";
+            this.TxtUser.Size = new System.Drawing.Size(150, 20);
+            this.TxtUser.StyleController = this.layoutControl1;
+            this.TxtUser.TabIndex = 6;
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
+            this.BtnGuardar.Location = new System.Drawing.Point(18, 186);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(102, 30);
+            this.BtnGuardar.StyleController = this.layoutControl1;
+            this.BtnGuardar.TabIndex = 7;
+            this.BtnGuardar.Text = "Guardar";
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnCancelar.Location = new System.Drawing.Point(134, 186);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(103, 30);
+            this.BtnCancelar.StyleController = this.layoutControl1;
+            this.BtnCancelar.TabIndex = 8;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // TxtPassword
+            // 
+            this.TxtPassword.Location = new System.Drawing.Point(88, 153);
+            this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Size = new System.Drawing.Size(150, 20);
+            this.TxtPassword.StyleController = this.layoutControl1;
+            this.TxtPassword.TabIndex = 9;
             // 
             // Root
             // 
@@ -112,34 +166,6 @@
             this.simpleLabelItem1.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
             this.simpleLabelItem1.TextSize = new System.Drawing.Size(50, 20);
             // 
-            // TxtServer
-            // 
-            this.TxtServer.Location = new System.Drawing.Point(89, 57);
-            this.TxtServer.Name = "TxtServer";
-            this.TxtServer.Size = new System.Drawing.Size(149, 20);
-            this.TxtServer.StyleController = this.layoutControl1;
-            this.TxtServer.TabIndex = 4;
-            // 
-            // layoutControlItem1
-            // 
-            this.layoutControlItem1.Control = this.TxtServer;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 40);
-            this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
-            this.layoutControlItem1.Size = new System.Drawing.Size(233, 32);
-            this.layoutControlItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem1.Text = "Servidor";
-            this.layoutControlItem1.TextSize = new System.Drawing.Size(68, 13);
-            // 
-            // TxtDataBase
-            // 
-            this.TxtDataBase.Location = new System.Drawing.Point(89, 89);
-            this.TxtDataBase.Name = "TxtDataBase";
-            this.TxtDataBase.Size = new System.Drawing.Size(149, 20);
-            this.TxtDataBase.StyleController = this.layoutControl1;
-            this.TxtDataBase.TabIndex = 5;
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.TxtDataBase;
@@ -152,13 +178,17 @@
             this.layoutControlItem2.Text = "Base de datos";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(68, 13);
             // 
-            // TxtUser
+            // layoutControlItem1
             // 
-            this.TxtUser.Location = new System.Drawing.Point(89, 121);
-            this.TxtUser.Name = "TxtUser";
-            this.TxtUser.Size = new System.Drawing.Size(149, 20);
-            this.TxtUser.StyleController = this.layoutControl1;
-            this.TxtUser.TabIndex = 6;
+            this.layoutControlItem1.Control = this.TxtServer;
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 40);
+            this.layoutControlItem1.Name = "layoutControlItem1";
+            this.layoutControlItem1.OptionsTableLayoutItem.ColumnIndex = 1;
+            this.layoutControlItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
+            this.layoutControlItem1.Size = new System.Drawing.Size(233, 32);
+            this.layoutControlItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlItem1.Text = "Servidor";
+            this.layoutControlItem1.TextSize = new System.Drawing.Size(68, 13);
             // 
             // layoutControlItem3
             // 
@@ -173,16 +203,16 @@
             this.layoutControlItem3.Text = "Usuario";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(68, 13);
             // 
-            // BtnGuardar
+            // layoutControlItem6
             // 
-            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
-            this.BtnGuardar.Location = new System.Drawing.Point(18, 186);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(102, 30);
-            this.BtnGuardar.StyleController = this.layoutControl1;
-            this.BtnGuardar.TabIndex = 7;
-            this.BtnGuardar.Text = "Guardar";
-            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            this.layoutControlItem6.Control = this.TxtPassword;
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 136);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Padding = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
+            this.layoutControlItem6.Size = new System.Drawing.Size(233, 32);
+            this.layoutControlItem6.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlItem6.Text = "Contraseña";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(68, 13);
             // 
             // layoutControlItem4
             // 
@@ -194,17 +224,6 @@
             this.layoutControlItem4.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
-            this.BtnCancelar.Location = new System.Drawing.Point(134, 186);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(103, 30);
-            this.BtnCancelar.StyleController = this.layoutControl1;
-            this.BtnCancelar.TabIndex = 8;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // layoutControlItem5
             // 
@@ -218,49 +237,31 @@
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
             // 
-            // TxtPassword
-            // 
-            this.TxtPassword.Location = new System.Drawing.Point(89, 153);
-            this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(149, 20);
-            this.TxtPassword.StyleController = this.layoutControl1;
-            this.TxtPassword.TabIndex = 9;
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.TxtPassword;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 136);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Padding = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
-            this.layoutControlItem6.Size = new System.Drawing.Size(233, 32);
-            this.layoutControlItem6.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem6.Text = "Contraseña";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(68, 13);
-            // 
             // FrmConfigDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(255, 240);
             this.Controls.Add(this.layoutControl1);
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConfigDB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuración de Conexion";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.TxtServer.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtDataBase.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtUser.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtServer.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtDataBase.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtUser.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TxtPassword.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             this.ResumeLayout(false);
 
         }
