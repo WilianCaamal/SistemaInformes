@@ -26,7 +26,7 @@ namespace SistemaInformes
             this.WindowState = FormWindowState.Maximized;
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();
-            
+            frmLogin.Focus();
         }
     }
 }
