@@ -30,11 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager SplashManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::SistemaInformes.SplashBienvenida), true, false);
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.BtnApoyos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.BtnPredios = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.BtnBeneficiarios = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -42,7 +50,7 @@
             this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.BtnServidor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement13 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar3 = new DevExpress.XtraBars.Bar();
@@ -67,7 +75,7 @@
             this.accordionControlElement11});
             this.accordionControl1.Location = new System.Drawing.Point(0, 0);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Size = new System.Drawing.Size(205, 264);
+            this.accordionControl1.Size = new System.Drawing.Size(205, 333);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.Text = "accordionControl1";
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
@@ -75,34 +83,39 @@
             // accordionControlElement1
             // 
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement4,
-            this.accordionControlElement5,
-            this.accordionControlElement6});
+            this.BtnApoyos,
+            this.BtnPredios,
+            this.BtnBeneficiarios});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.dossier_folder_24px;
             this.accordionControlElement1.Name = "accordionControlElement1";
+            toolTipTitleItem1.Text = "Catalogos";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.accordionControlElement1.SuperTip = superToolTip1;
             this.accordionControlElement1.Text = "Catalogos";
             // 
-            // accordionControlElement4
+            // BtnApoyos
             // 
-            this.accordionControlElement4.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.ledger_24px;
-            this.accordionControlElement4.Name = "accordionControlElement4";
-            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "Apoyos";
+            this.BtnApoyos.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.ledger_24px;
+            this.BtnApoyos.Name = "BtnApoyos";
+            this.BtnApoyos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.BtnApoyos.Text = "Apoyos";
+            this.BtnApoyos.Click += new System.EventHandler(this.BtnApoyos_Click);
             // 
-            // accordionControlElement5
+            // BtnPredios
             // 
-            this.accordionControlElement5.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.map_marker_24px;
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Predios";
+            this.BtnPredios.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.map_marker_24px;
+            this.BtnPredios.Name = "BtnPredios";
+            this.BtnPredios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.BtnPredios.Text = "Predios";
+            this.BtnPredios.Click += new System.EventHandler(this.BtnPredios_Click);
             // 
-            // accordionControlElement6
+            // BtnBeneficiarios
             // 
-            this.accordionControlElement6.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.groups_24px;
-            this.accordionControlElement6.Name = "accordionControlElement6";
-            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement6.Text = "Beneficiarios";
+            this.BtnBeneficiarios.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.groups_24px;
+            this.BtnBeneficiarios.Name = "BtnBeneficiarios";
+            this.BtnBeneficiarios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.BtnBeneficiarios.Text = "Beneficiarios";
             // 
             // accordionControlElement2
             // 
@@ -110,8 +123,16 @@
             this.accordionControlElement7,
             this.accordionControlElement8});
             this.accordionControlElement2.Expanded = true;
+            this.accordionControlElement2.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)});
             this.accordionControlElement2.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.overview_pages_2_24px;
             this.accordionControlElement2.Name = "accordionControlElement2";
+            toolTipTitleItem2.Text = "Informes";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.accordionControlElement2.SuperTip = superToolTip2;
             this.accordionControlElement2.Text = "Informes";
             // 
             // accordionControlElement7
@@ -133,9 +154,11 @@
             this.accordionControlElement3.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement9,
             this.accordionControlElement10});
-            this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.estimate_24px;
             this.accordionControlElement3.Name = "accordionControlElement3";
+            toolTipTitleItem3.Text = "Nominas";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            this.accordionControlElement3.SuperTip = superToolTip3;
             this.accordionControlElement3.Text = "Nominas";
             // 
             // accordionControlElement9
@@ -155,19 +178,23 @@
             // accordionControlElement11
             // 
             this.accordionControlElement11.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement12,
+            this.BtnServidor,
             this.accordionControlElement13});
             this.accordionControlElement11.Expanded = true;
             this.accordionControlElement11.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.maintenance_24px;
             this.accordionControlElement11.Name = "accordionControlElement11";
+            toolTipTitleItem4.Text = "Configuración";
+            superToolTip4.Items.Add(toolTipTitleItem4);
+            this.accordionControlElement11.SuperTip = superToolTip4;
             this.accordionControlElement11.Text = "Configuración";
             // 
-            // accordionControlElement12
+            // BtnServidor
             // 
-            this.accordionControlElement12.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.server_24px;
-            this.accordionControlElement12.Name = "accordionControlElement12";
-            this.accordionControlElement12.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement12.Text = "Servidor";
+            this.BtnServidor.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.server_24px;
+            this.BtnServidor.Name = "BtnServidor";
+            this.BtnServidor.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.BtnServidor.Text = "Servidor";
+            this.BtnServidor.Click += new System.EventHandler(this.BtnServidor_Click);
             // 
             // accordionControlElement13
             // 
@@ -224,15 +251,15 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(645, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(699, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 264);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 333);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(645, 25);
+            this.barDockControlBottom.Size = new System.Drawing.Size(699, 25);
             // 
             // barDockControlLeft
             // 
@@ -240,15 +267,15 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 264);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 333);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(645, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(699, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 264);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 333);
             // 
             // bar1
             // 
@@ -262,13 +289,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 289);
+            this.ClientSize = new System.Drawing.Size(699, 358);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.IsMdiContainer = true;
+            this.MdiChildCaptionFormatString = "{0} - {0}";
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Informes";
@@ -286,15 +314,15 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement BtnApoyos;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement BtnPredios;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement BtnBeneficiarios;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement12;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement BtnServidor;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement13;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.Bar bar3;

@@ -29,29 +29,29 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.ChkRecordar = new DevExpress.XtraEditors.CheckEdit();
             this.TxtContrasenia = new DevExpress.XtraEditors.TextEdit();
             this.TxtUsuario = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.BtnAcceder = new DevExpress.XtraEditors.SimpleButton();
             this.BtnSalir = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChkRecordar.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtContrasenia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUsuario.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             this.SuspendLayout();
@@ -75,6 +75,42 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // ChkRecordar
+            // 
+            this.ChkRecordar.Location = new System.Drawing.Point(17, 128);
+            this.ChkRecordar.Name = "ChkRecordar";
+            this.ChkRecordar.Properties.Caption = "Recordar usuario.";
+            this.ChkRecordar.Size = new System.Drawing.Size(190, 19);
+            this.ChkRecordar.StyleController = this.layoutControl1;
+            this.ChkRecordar.TabIndex = 13;
+            // 
+            // TxtContrasenia
+            // 
+            this.TxtContrasenia.Location = new System.Drawing.Point(76, 94);
+            this.TxtContrasenia.Name = "TxtContrasenia";
+            this.TxtContrasenia.Size = new System.Drawing.Size(131, 20);
+            this.TxtContrasenia.StyleController = this.layoutControl1;
+            this.TxtContrasenia.TabIndex = 12;
+            // 
+            // TxtUsuario
+            // 
+            this.TxtUsuario.Location = new System.Drawing.Point(76, 60);
+            this.TxtUsuario.Name = "TxtUsuario";
+            this.TxtUsuario.Size = new System.Drawing.Size(131, 20);
+            this.TxtUsuario.StyleController = this.layoutControl1;
+            this.TxtUsuario.TabIndex = 11;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(48, 22);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(128, 19);
+            this.labelControl1.StyleController = this.layoutControl1;
+            this.labelControl1.TabIndex = 8;
+            this.labelControl1.Text = "Inicio de Sesión";
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -90,52 +126,17 @@
             this.Root.Size = new System.Drawing.Size(224, 218);
             this.Root.TextVisible = false;
             // 
-            // ChkRecordar
+            // layoutControlItem8
             // 
-            this.ChkRecordar.Location = new System.Drawing.Point(17, 128);
-            this.ChkRecordar.Name = "ChkRecordar";
-            this.ChkRecordar.Properties.Caption = "Recordar usuario.";
-            this.ChkRecordar.Size = new System.Drawing.Size(190, 19);
-            this.ChkRecordar.StyleController = this.layoutControl1;
-            this.ChkRecordar.TabIndex = 13;
-            // 
-            // TxtContrasenia
-            // 
-            this.TxtContrasenia.Location = new System.Drawing.Point(77, 94);
-            this.TxtContrasenia.Name = "TxtContrasenia";
-            this.TxtContrasenia.Size = new System.Drawing.Size(130, 20);
-            this.TxtContrasenia.StyleController = this.layoutControl1;
-            this.TxtContrasenia.TabIndex = 12;
-            // 
-            // TxtUsuario
-            // 
-            this.TxtUsuario.Location = new System.Drawing.Point(77, 60);
-            this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(130, 20);
-            this.TxtUsuario.StyleController = this.layoutControl1;
-            this.TxtUsuario.TabIndex = 11;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(48, 22);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(128, 19);
-            this.labelControl1.StyleController = this.layoutControl1;
-            this.labelControl1.TabIndex = 8;
-            this.labelControl1.Text = "Inicio de Sesión";
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.ChkRecordar;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 111);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(204, 33);
-            this.layoutControlItem3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem3.Text = "Recordar";
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
+            this.layoutControlItem8.Control = this.labelControl1;
+            this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
+            this.layoutControlItem8.Name = "layoutControlItem8";
+            this.layoutControlItem8.Size = new System.Drawing.Size(204, 43);
+            this.layoutControlItem8.Spacing = new DevExpress.XtraLayout.Utils.Padding(10, 10, 10, 10);
+            this.layoutControlItem8.Text = "Titulo";
+            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem8.TextVisible = false;
             // 
             // layoutControlItem4
             // 
@@ -148,6 +149,17 @@
             this.layoutControlItem4.Text = "Contraseña";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(56, 13);
             // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.ChkRecordar;
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 111);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(204, 33);
+            this.layoutControlItem3.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlItem3.Text = "Recordar";
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.TxtUsuario;
@@ -158,18 +170,6 @@
             this.layoutControlItem5.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlItem5.Text = "Usuario";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(56, 13);
-            // 
-            // layoutControlItem8
-            // 
-            this.layoutControlItem8.Control = this.labelControl1;
-            this.layoutControlItem8.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.layoutControlItem8.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(204, 43);
-            this.layoutControlItem8.Spacing = new DevExpress.XtraLayout.Utils.Padding(10, 10, 10, 10);
-            this.layoutControlItem8.Text = "Titulo";
-            this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem8.TextVisible = false;
             // 
             // BtnAcceder
             // 
@@ -240,14 +240,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             this.layoutControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ChkRecordar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtContrasenia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUsuario.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             this.ResumeLayout(false);

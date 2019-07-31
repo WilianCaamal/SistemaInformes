@@ -53,6 +53,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catalogos\FrmApoyos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmApoyos.Designer.cs">
+      <DependentUpon>FrmApoyos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Catalogos\FrmPredios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmPredios.Designer.cs">
+      <DependentUpon>FrmPredios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Configuraciones\FrmConfigDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\FrmConfigDB.Designer.cs">
+      <DependentUpon>FrmConfigDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuraciones\SettingsConnection.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -88,6 +106,12 @@
     <Compile Include="SplashBienvenida.Designer.cs">
       <DependentUpon>SplashBienvenida.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Catalogos\FrmApoyos.resx">
+      <DependentUpon>FrmApoyos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones\FrmConfigDB.resx">
+      <DependentUpon>FrmConfigDB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,7 +155,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Catalogos\" />
     <Folder Include="Informes\" />
     <Folder Include="Operaciones\" />
     <Folder Include="Reportes\" />
