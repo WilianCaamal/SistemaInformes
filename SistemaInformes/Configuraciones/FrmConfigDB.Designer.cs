@@ -102,7 +102,7 @@
             // 
             // BtnGuardar
             // 
-            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
+            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.Images24px.save_24px;
             this.BtnGuardar.Location = new System.Drawing.Point(18, 186);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(102, 28);
@@ -113,7 +113,7 @@
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.Images24px.cancel_24px;
             this.BtnCancelar.Location = new System.Drawing.Point(134, 186);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(103, 28);

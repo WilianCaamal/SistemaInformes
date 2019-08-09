@@ -124,7 +124,7 @@
             this.BtnGuardar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnGuardar.Caption = "Guardar";
             this.BtnGuardar.Id = 0;
-            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
+            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.Images24px.save_24px;
             this.BtnGuardar.Name = "BtnGuardar";
             // 
             // BtnEditar
@@ -132,7 +132,7 @@
             this.BtnEditar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnEditar.Caption = "Editar";
             this.BtnEditar.Id = 2;
-            this.BtnEditar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.edit_property_24px;
+            this.BtnEditar.ImageOptions.Image = global::SistemaInformes.Images24px.edit_property_24px;
             this.BtnEditar.Name = "BtnEditar";
             // 
             // BtnEliminar
@@ -140,7 +140,7 @@
             this.BtnEliminar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnEliminar.Caption = "Eliminar";
             this.BtnEliminar.Id = 3;
-            this.BtnEliminar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.delete_24px;
+            this.BtnEliminar.ImageOptions.Image = global::SistemaInformes.Images24px.delete_24px;
             this.BtnEliminar.Name = "BtnEliminar";
             // 
             // BtnCancelar
@@ -148,7 +148,7 @@
             this.BtnCancelar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnCancelar.Caption = "Cancelar";
             this.BtnCancelar.Id = 1;
-            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.Images24px.cancel_24px;
             this.BtnCancelar.Name = "BtnCancelar";
             // 
             // barDockControlTop
@@ -376,7 +376,7 @@
             this.simpleLabelItem1.AllowHotTrack = false;
             this.simpleLabelItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.ResourcesImages48px.ledger_48px;
+            this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.Images48px.ledger_48px;
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
             this.simpleLabelItem1.Size = new System.Drawing.Size(672, 62);

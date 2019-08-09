@@ -104,7 +104,7 @@
             // BtnSalir
             // 
             this.BtnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BtnSalir.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnSalir.ImageOptions.Image = global::SistemaInformes.Images24px.cancel_24px;
             this.BtnSalir.Location = new System.Drawing.Point(119, 161);
             this.BtnSalir.Name = "BtnSalir";
             this.BtnSalir.Size = new System.Drawing.Size(88, 40);
@@ -115,7 +115,7 @@
             // 
             // BtnAcceder
             // 
-            this.BtnAcceder.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.ok_24px;
+            this.BtnAcceder.ImageOptions.Image = global::SistemaInformes.Images24px.ok_24px;
             this.BtnAcceder.Location = new System.Drawing.Point(17, 161);
             this.BtnAcceder.Name = "BtnAcceder";
             this.BtnAcceder.Size = new System.Drawing.Size(88, 40);

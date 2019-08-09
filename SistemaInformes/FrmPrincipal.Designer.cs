@@ -90,7 +90,7 @@
             this.BtnPredios,
             this.BtnBeneficiarios});
             this.accordionControlElement1.Expanded = true;
-            this.accordionControlElement1.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.dossier_folder_24px;
+            this.accordionControlElement1.ImageOptions.Image = global::SistemaInformes.Images24px.dossier_folder_24px;
             this.accordionControlElement1.Name = "accordionControlElement1";
             toolTipTitleItem1.Text = "Catalogos";
             superToolTip1.Items.Add(toolTipTitleItem1);
@@ -99,7 +99,7 @@
             // 
             // BtnApoyos
             // 
-            this.BtnApoyos.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.ledger_24px;
+            this.BtnApoyos.ImageOptions.Image = global::SistemaInformes.Images24px.ledger_24px;
             this.BtnApoyos.Name = "BtnApoyos";
             this.BtnApoyos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.BtnApoyos.Text = "Apoyos";
@@ -107,7 +107,7 @@
             // 
             // BtnPredios
             // 
-            this.BtnPredios.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.map_marker_24px;
+            this.BtnPredios.ImageOptions.Image = global::SistemaInformes.Images24px.map_marker_24px;
             this.BtnPredios.Name = "BtnPredios";
             this.BtnPredios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.BtnPredios.Text = "Predios";
@@ -115,7 +115,7 @@
             // 
             // BtnBeneficiarios
             // 
-            this.BtnBeneficiarios.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.groups_24px;
+            this.BtnBeneficiarios.ImageOptions.Image = global::SistemaInformes.Images24px.groups_24px;
             this.BtnBeneficiarios.Name = "BtnBeneficiarios";
             this.BtnBeneficiarios.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.BtnBeneficiarios.Text = "Beneficiarios";
@@ -132,7 +132,7 @@
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)});
-            this.accordionControlElement2.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.overview_pages_2_24px;
+            this.accordionControlElement2.ImageOptions.Image = global::SistemaInformes.Images24px.overview_pages_2_24px;
             this.accordionControlElement2.Name = "accordionControlElement2";
             toolTipTitleItem2.Text = "Informes";
             superToolTip2.Items.Add(toolTipTitleItem2);
@@ -141,14 +141,14 @@
             // 
             // accordionControlElement7
             // 
-            this.accordionControlElement7.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.view_details_24px;
+            this.accordionControlElement7.ImageOptions.Image = global::SistemaInformes.Images24px.view_details_24px;
             this.accordionControlElement7.Name = "accordionControlElement7";
             this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement7.Text = "Todos";
             // 
             // accordionControlElement8
             // 
-            this.accordionControlElement8.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.add_24px;
+            this.accordionControlElement8.ImageOptions.Image = global::SistemaInformes.Images24px.add_24px;
             this.accordionControlElement8.Name = "accordionControlElement8";
             this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement8.Text = "Nuevo";
@@ -158,7 +158,7 @@
             this.accordionControlElement3.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement9,
             this.accordionControlElement10});
-            this.accordionControlElement3.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.estimate_24px;
+            this.accordionControlElement3.ImageOptions.Image = global::SistemaInformes.Images24px.estimate_24px;
             this.accordionControlElement3.Name = "accordionControlElement3";
             toolTipTitleItem3.Text = "Nominas";
             superToolTip3.Items.Add(toolTipTitleItem3);
@@ -167,14 +167,14 @@
             // 
             // accordionControlElement9
             // 
-            this.accordionControlElement9.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.view_details_24px;
+            this.accordionControlElement9.ImageOptions.Image = global::SistemaInformes.Images24px.view_details_24px;
             this.accordionControlElement9.Name = "accordionControlElement9";
             this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement9.Text = "Todas";
             // 
             // accordionControlElement10
             // 
-            this.accordionControlElement10.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.add_24px;
+            this.accordionControlElement10.ImageOptions.Image = global::SistemaInformes.Images24px.add_24px;
             this.accordionControlElement10.Name = "accordionControlElement10";
             this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement10.Text = "Nuevo";
@@ -186,7 +186,7 @@
             this.BtnImpresora,
             this.BtnDocumentos});
             this.accordionControlElement11.Expanded = true;
-            this.accordionControlElement11.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.maintenance_24px;
+            this.accordionControlElement11.ImageOptions.Image = global::SistemaInformes.Images24px.maintenance_24px;
             this.accordionControlElement11.Name = "accordionControlElement11";
             toolTipTitleItem4.Text = "Configuración";
             superToolTip4.Items.Add(toolTipTitleItem4);
@@ -195,7 +195,7 @@
             // 
             // BtnServidor
             // 
-            this.BtnServidor.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.server_24px;
+            this.BtnServidor.ImageOptions.Image = global::SistemaInformes.Images24px.server_24px;
             this.BtnServidor.Name = "BtnServidor";
             this.BtnServidor.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.BtnServidor.Text = "Servidor";
@@ -203,7 +203,7 @@
             // 
             // BtnImpresora
             // 
-            this.BtnImpresora.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.print_24px;
+            this.BtnImpresora.ImageOptions.Image = global::SistemaInformes.Images24px.print_24px;
             this.BtnImpresora.Name = "BtnImpresora";
             this.BtnImpresora.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.BtnImpresora.Text = "Impresora";
@@ -211,7 +211,7 @@
             // 
             // BtnDocumentos
             // 
-            this.BtnDocumentos.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.overview_pages_2_24px;
+            this.BtnDocumentos.ImageOptions.Image = global::SistemaInformes.Images24px.overview_pages_2_24px;
             this.BtnDocumentos.Name = "BtnDocumentos";
             this.BtnDocumentos.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.BtnDocumentos.Text = "Documentos";
