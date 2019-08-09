@@ -32,15 +32,15 @@
             this.ChkRecordar = new DevExpress.XtraEditors.CheckEdit();
             this.TxtContrasenia = new DevExpress.XtraEditors.TextEdit();
             this.TxtUsuario = new DevExpress.XtraEditors.TextEdit();
+            this.BtnSalir = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnAcceder = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.BtnAcceder = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnSalir = new DevExpress.XtraEditors.SimpleButton();
-            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem7 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -48,11 +48,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.TxtContrasenia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUsuario.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +88,7 @@
             // 
             this.TxtContrasenia.Location = new System.Drawing.Point(76, 94);
             this.TxtContrasenia.Name = "TxtContrasenia";
+            this.TxtContrasenia.Properties.PasswordChar = '*';
             this.TxtContrasenia.Size = new System.Drawing.Size(131, 20);
             this.TxtContrasenia.StyleController = this.layoutControl1;
             this.TxtContrasenia.TabIndex = 12;
@@ -99,6 +100,29 @@
             this.TxtUsuario.Size = new System.Drawing.Size(131, 20);
             this.TxtUsuario.StyleController = this.layoutControl1;
             this.TxtUsuario.TabIndex = 11;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BtnSalir.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnSalir.Location = new System.Drawing.Point(119, 161);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(88, 40);
+            this.BtnSalir.StyleController = this.layoutControl1;
+            this.BtnSalir.TabIndex = 10;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // BtnAcceder
+            // 
+            this.BtnAcceder.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.ok_24px;
+            this.BtnAcceder.Location = new System.Drawing.Point(17, 161);
+            this.BtnAcceder.Name = "BtnAcceder";
+            this.BtnAcceder.Size = new System.Drawing.Size(88, 40);
+            this.BtnAcceder.StyleController = this.layoutControl1;
+            this.BtnAcceder.TabIndex = 9;
+            this.BtnAcceder.Text = "Acceder";
+            this.BtnAcceder.Click += new System.EventHandler(this.BtnAcceder_Click);
             // 
             // labelControl1
             // 
@@ -125,6 +149,22 @@
             this.Root.Name = "Root";
             this.Root.Size = new System.Drawing.Size(224, 218);
             this.Root.TextVisible = false;
+            // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.BtnSalir;
+            this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.layoutControlItem6.Location = new System.Drawing.Point(102, 144);
+            this.layoutControlItem6.MinSize = new System.Drawing.Size(43, 40);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(102, 54);
+            this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
+            this.layoutControlItem6.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.layoutControlItem6.Text = "Boton2";
+            this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem6.TextToControlDistance = 0;
+            this.layoutControlItem6.TextVisible = false;
             // 
             // layoutControlItem8
             // 
@@ -171,45 +211,6 @@
             this.layoutControlItem5.Text = "Usuario";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(56, 13);
             // 
-            // BtnAcceder
-            // 
-            this.BtnAcceder.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.ok_24px;
-            this.BtnAcceder.Location = new System.Drawing.Point(17, 161);
-            this.BtnAcceder.Name = "BtnAcceder";
-            this.BtnAcceder.Size = new System.Drawing.Size(88, 40);
-            this.BtnAcceder.StyleController = this.layoutControl1;
-            this.BtnAcceder.TabIndex = 9;
-            this.BtnAcceder.Text = "Acceder";
-            this.BtnAcceder.Click += new System.EventHandler(this.BtnAcceder_Click);
-            // 
-            // BtnSalir
-            // 
-            this.BtnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BtnSalir.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
-            this.BtnSalir.Location = new System.Drawing.Point(119, 161);
-            this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(88, 40);
-            this.BtnSalir.StyleController = this.layoutControl1;
-            this.BtnSalir.TabIndex = 10;
-            this.BtnSalir.Text = "Salir";
-            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
-            // 
-            // layoutControlItem6
-            // 
-            this.layoutControlItem6.Control = this.BtnSalir;
-            this.layoutControlItem6.ControlAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.layoutControlItem6.Location = new System.Drawing.Point(102, 144);
-            this.layoutControlItem6.MinSize = new System.Drawing.Size(43, 40);
-            this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(102, 54);
-            this.layoutControlItem6.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
-            this.layoutControlItem6.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem6.Text = "Boton2";
-            this.layoutControlItem6.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.CustomSize;
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem6.TextToControlDistance = 0;
-            this.layoutControlItem6.TextVisible = false;
-            // 
             // layoutControlItem7
             // 
             this.layoutControlItem7.Control = this.BtnAcceder;
@@ -239,16 +240,15 @@
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            this.layoutControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChkRecordar.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtContrasenia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtUsuario.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
             this.ResumeLayout(false);
 

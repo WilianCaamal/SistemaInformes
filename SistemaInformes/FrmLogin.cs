@@ -25,6 +25,7 @@ namespace SistemaInformes
 
         private void BtnAcceder_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
 

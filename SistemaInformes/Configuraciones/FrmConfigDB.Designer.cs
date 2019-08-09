@@ -32,6 +32,8 @@
             this.TxtServer = new DevExpress.XtraEditors.TextEdit();
             this.TxtDataBase = new DevExpress.XtraEditors.TextEdit();
             this.TxtUser = new DevExpress.XtraEditors.TextEdit();
+            this.BtnGuardar = new DevExpress.XtraEditors.SimpleButton();
+            this.BtnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.TxtPassword = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
@@ -39,8 +41,6 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.BtnGuardar = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
@@ -100,10 +100,33 @@
             this.TxtUser.StyleController = this.layoutControl1;
             this.TxtUser.TabIndex = 6;
             // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
+            this.BtnGuardar.Location = new System.Drawing.Point(18, 186);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(102, 28);
+            this.BtnGuardar.StyleController = this.layoutControl1;
+            this.BtnGuardar.TabIndex = 7;
+            this.BtnGuardar.Text = "Guardar";
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnCancelar.Location = new System.Drawing.Point(134, 186);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(103, 28);
+            this.BtnCancelar.StyleController = this.layoutControl1;
+            this.BtnCancelar.TabIndex = 8;
+            this.BtnCancelar.Text = "Cancelar";
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
             // TxtPassword
             // 
             this.TxtPassword.Location = new System.Drawing.Point(88, 153);
             this.TxtPassword.Name = "TxtPassword";
+            this.TxtPassword.Properties.PasswordChar = '*';
             this.TxtPassword.Size = new System.Drawing.Size(150, 20);
             this.TxtPassword.StyleController = this.layoutControl1;
             this.TxtPassword.TabIndex = 9;
@@ -192,28 +215,6 @@
             this.layoutControlItem6.Text = "Contraseña";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(68, 13);
             // 
-            // BtnGuardar
-            // 
-            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
-            this.BtnGuardar.Location = new System.Drawing.Point(18, 186);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(102, 30);
-            this.BtnGuardar.StyleController = this.layoutControl1;
-            this.BtnGuardar.TabIndex = 7;
-            this.BtnGuardar.Text = "Guardar";
-            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
-            this.BtnCancelar.Location = new System.Drawing.Point(134, 186);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(103, 30);
-            this.BtnCancelar.StyleController = this.layoutControl1;
-            this.BtnCancelar.TabIndex = 8;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.BtnGuardar;
@@ -248,6 +249,8 @@
             this.Name = "FrmConfigDB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuración de Conexion";
+            this.Load += new System.EventHandler(this.FrmConfigDB_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmConfigDB_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TxtServer.Properties)).EndInit();

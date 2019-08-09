@@ -96,6 +96,12 @@
     <Compile Include="Configuraciones\FrmConfigDocs.Designer.cs">
       <DependentUpon>FrmConfigDocs.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuraciones\FrmConfigPrinter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuraciones\FrmConfigPrinter.Designer.cs">
+      <DependentUpon>FrmConfigPrinter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuraciones\SettingsConnection.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuraciones\FrmConfigDocs.resx">
       <DependentUpon>FrmConfigDocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuraciones\FrmConfigPrinter.resx">
+      <DependentUpon>FrmConfigPrinter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -289,6 +298,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\administrative_tools_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -42,18 +42,18 @@
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.layoutControl2 = new DevExpress.XtraLayout.LayoutControl();
-            this.comboBoxEdit5 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.CboNombreApoyo = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.TxtFolio = new DevExpress.XtraEditors.TextEdit();
+            this.TxtNombrePredio = new DevExpress.XtraEditors.TextEdit();
+            this.TxtSuperficie = new DevExpress.XtraEditors.TextEdit();
+            this.TxtMontoPago = new DevExpress.XtraEditors.TextEdit();
+            this.TxtMontoAsistencia = new DevExpress.XtraEditors.TextEdit();
+            this.CboTipoPropietario = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.TxtAreaPago = new DevExpress.XtraEditors.TextEdit();
+            this.TxtMontoTotal = new DevExpress.XtraEditors.TextEdit();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.comboBoxEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.CboEstado = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.CboMunicipio = new DevExpress.XtraEditors.ComboBoxEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem14 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -77,18 +77,18 @@
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
             this.layoutControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CboNombreApoyo.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFolio.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtNombrePredio.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSuperficie.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMontoPago.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMontoAsistencia.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CboTipoPropietario.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAreaPago.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMontoTotal.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CboEstado.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CboMunicipio.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
@@ -148,6 +148,7 @@
             this.BtnGuardar.Id = 0;
             this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
             this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGuardar_ItemClick);
             // 
             // BtnEditar
             // 
@@ -156,6 +157,7 @@
             this.BtnEditar.Id = 1;
             this.BtnEditar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.edit_property_24px;
             this.BtnEditar.Name = "BtnEditar";
+            this.BtnEditar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnEditar_ItemClick);
             // 
             // BtnEliminar
             // 
@@ -164,6 +166,7 @@
             this.BtnEliminar.Id = 2;
             this.BtnEliminar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.delete_24px;
             this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnEliminar_ItemClick);
             // 
             // BtnCancelar
             // 
@@ -172,6 +175,7 @@
             this.BtnCancelar.Id = 3;
             this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
             this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCancelar_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -185,9 +189,9 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 327);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 330);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(779, 35);
+            this.barDockControlBottom.Size = new System.Drawing.Size(779, 32);
             // 
             // barDockControlLeft
             // 
@@ -195,7 +199,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 327);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 330);
             // 
             // barDockControlRight
             // 
@@ -203,7 +207,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(779, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 327);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 330);
             // 
             // layoutControl1
             // 
@@ -212,8 +216,9 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(522, 322, 650, 460);
+            this.layoutControl1.OptionsFocus.ActivateSelectedControlOnGotFocus = false;
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(779, 327);
+            this.layoutControl1.Size = new System.Drawing.Size(779, 330);
             this.layoutControl1.TabIndex = 4;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -222,107 +227,107 @@
             this.groupControl1.Controls.Add(this.layoutControl2);
             this.groupControl1.Location = new System.Drawing.Point(12, 74);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(755, 241);
+            this.groupControl1.Size = new System.Drawing.Size(755, 244);
             this.groupControl1.TabIndex = 12;
             this.groupControl1.Text = "Datos";
             // 
             // layoutControl2
             // 
-            this.layoutControl2.Controls.Add(this.comboBoxEdit5);
-            this.layoutControl2.Controls.Add(this.textEdit3);
-            this.layoutControl2.Controls.Add(this.textEdit1);
-            this.layoutControl2.Controls.Add(this.textEdit2);
-            this.layoutControl2.Controls.Add(this.textEdit6);
-            this.layoutControl2.Controls.Add(this.textEdit7);
-            this.layoutControl2.Controls.Add(this.comboBoxEdit3);
-            this.layoutControl2.Controls.Add(this.textEdit5);
-            this.layoutControl2.Controls.Add(this.textEdit8);
+            this.layoutControl2.Controls.Add(this.CboNombreApoyo);
+            this.layoutControl2.Controls.Add(this.TxtFolio);
+            this.layoutControl2.Controls.Add(this.TxtNombrePredio);
+            this.layoutControl2.Controls.Add(this.TxtSuperficie);
+            this.layoutControl2.Controls.Add(this.TxtMontoPago);
+            this.layoutControl2.Controls.Add(this.TxtMontoAsistencia);
+            this.layoutControl2.Controls.Add(this.CboTipoPropietario);
+            this.layoutControl2.Controls.Add(this.TxtAreaPago);
+            this.layoutControl2.Controls.Add(this.TxtMontoTotal);
             this.layoutControl2.Controls.Add(this.textEdit4);
-            this.layoutControl2.Controls.Add(this.comboBoxEdit2);
-            this.layoutControl2.Controls.Add(this.comboBoxEdit1);
+            this.layoutControl2.Controls.Add(this.CboEstado);
+            this.layoutControl2.Controls.Add(this.CboMunicipio);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl2.Location = new System.Drawing.Point(2, 20);
+            this.layoutControl2.Location = new System.Drawing.Point(2, 21);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(751, 219);
+            this.layoutControl2.Size = new System.Drawing.Size(751, 221);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
-            // comboBoxEdit5
+            // CboNombreApoyo
             // 
-            this.comboBoxEdit5.Location = new System.Drawing.Point(116, 14);
-            this.comboBoxEdit5.Name = "comboBoxEdit5";
-            this.comboBoxEdit5.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CboNombreApoyo.Location = new System.Drawing.Point(116, 14);
+            this.CboNombreApoyo.Name = "CboNombreApoyo";
+            this.CboNombreApoyo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit5.Size = new System.Drawing.Size(241, 20);
-            this.comboBoxEdit5.StyleController = this.layoutControl2;
-            this.comboBoxEdit5.TabIndex = 0;
+            this.CboNombreApoyo.Size = new System.Drawing.Size(241, 20);
+            this.CboNombreApoyo.StyleController = this.layoutControl2;
+            this.CboNombreApoyo.TabIndex = 0;
             // 
-            // textEdit3
+            // TxtFolio
             // 
-            this.textEdit3.Location = new System.Drawing.Point(467, 14);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(270, 20);
-            this.textEdit3.StyleController = this.layoutControl2;
-            this.textEdit3.TabIndex = 1;
+            this.TxtFolio.Location = new System.Drawing.Point(467, 14);
+            this.TxtFolio.Name = "TxtFolio";
+            this.TxtFolio.Size = new System.Drawing.Size(270, 20);
+            this.TxtFolio.StyleController = this.layoutControl2;
+            this.TxtFolio.TabIndex = 1;
             // 
-            // textEdit1
+            // TxtNombrePredio
             // 
-            this.textEdit1.Location = new System.Drawing.Point(116, 42);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(241, 20);
-            this.textEdit1.StyleController = this.layoutControl2;
-            this.textEdit1.TabIndex = 2;
+            this.TxtNombrePredio.Location = new System.Drawing.Point(116, 42);
+            this.TxtNombrePredio.Name = "TxtNombrePredio";
+            this.TxtNombrePredio.Size = new System.Drawing.Size(241, 20);
+            this.TxtNombrePredio.StyleController = this.layoutControl2;
+            this.TxtNombrePredio.TabIndex = 2;
             // 
-            // textEdit2
+            // TxtSuperficie
             // 
-            this.textEdit2.Location = new System.Drawing.Point(116, 70);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(241, 20);
-            this.textEdit2.StyleController = this.layoutControl2;
-            this.textEdit2.TabIndex = 4;
+            this.TxtSuperficie.Location = new System.Drawing.Point(116, 70);
+            this.TxtSuperficie.Name = "TxtSuperficie";
+            this.TxtSuperficie.Size = new System.Drawing.Size(241, 20);
+            this.TxtSuperficie.StyleController = this.layoutControl2;
+            this.TxtSuperficie.TabIndex = 4;
             // 
-            // textEdit6
+            // TxtMontoPago
             // 
-            this.textEdit6.Location = new System.Drawing.Point(116, 154);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Size = new System.Drawing.Size(240, 20);
-            this.textEdit6.StyleController = this.layoutControl2;
-            this.textEdit6.TabIndex = 9;
+            this.TxtMontoPago.Location = new System.Drawing.Point(116, 154);
+            this.TxtMontoPago.Name = "TxtMontoPago";
+            this.TxtMontoPago.Size = new System.Drawing.Size(240, 20);
+            this.TxtMontoPago.StyleController = this.layoutControl2;
+            this.TxtMontoPago.TabIndex = 9;
             // 
-            // textEdit7
+            // TxtMontoAsistencia
             // 
-            this.textEdit7.Location = new System.Drawing.Point(466, 154);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Size = new System.Drawing.Size(271, 20);
-            this.textEdit7.StyleController = this.layoutControl2;
-            this.textEdit7.TabIndex = 10;
+            this.TxtMontoAsistencia.Location = new System.Drawing.Point(466, 154);
+            this.TxtMontoAsistencia.Name = "TxtMontoAsistencia";
+            this.TxtMontoAsistencia.Size = new System.Drawing.Size(271, 20);
+            this.TxtMontoAsistencia.StyleController = this.layoutControl2;
+            this.TxtMontoAsistencia.TabIndex = 10;
             // 
-            // comboBoxEdit3
+            // CboTipoPropietario
             // 
-            this.comboBoxEdit3.Location = new System.Drawing.Point(467, 98);
-            this.comboBoxEdit3.Name = "comboBoxEdit3";
-            this.comboBoxEdit3.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CboTipoPropietario.Location = new System.Drawing.Point(467, 98);
+            this.CboTipoPropietario.Name = "CboTipoPropietario";
+            this.CboTipoPropietario.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit3.Size = new System.Drawing.Size(270, 20);
-            this.comboBoxEdit3.StyleController = this.layoutControl2;
-            this.comboBoxEdit3.TabIndex = 7;
+            this.CboTipoPropietario.Size = new System.Drawing.Size(270, 20);
+            this.CboTipoPropietario.StyleController = this.layoutControl2;
+            this.CboTipoPropietario.TabIndex = 7;
             // 
-            // textEdit5
+            // TxtAreaPago
             // 
-            this.textEdit5.Location = new System.Drawing.Point(116, 126);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Size = new System.Drawing.Size(621, 20);
-            this.textEdit5.StyleController = this.layoutControl2;
-            this.textEdit5.TabIndex = 8;
+            this.TxtAreaPago.Location = new System.Drawing.Point(116, 126);
+            this.TxtAreaPago.Name = "TxtAreaPago";
+            this.TxtAreaPago.Size = new System.Drawing.Size(621, 20);
+            this.TxtAreaPago.StyleController = this.layoutControl2;
+            this.TxtAreaPago.TabIndex = 8;
             // 
-            // textEdit8
+            // TxtMontoTotal
             // 
-            this.textEdit8.Location = new System.Drawing.Point(116, 182);
-            this.textEdit8.Name = "textEdit8";
-            this.textEdit8.Size = new System.Drawing.Size(621, 20);
-            this.textEdit8.StyleController = this.layoutControl2;
-            this.textEdit8.TabIndex = 11;
+            this.TxtMontoTotal.Location = new System.Drawing.Point(116, 182);
+            this.TxtMontoTotal.Name = "TxtMontoTotal";
+            this.TxtMontoTotal.Size = new System.Drawing.Size(621, 20);
+            this.TxtMontoTotal.StyleController = this.layoutControl2;
+            this.TxtMontoTotal.TabIndex = 11;
             // 
             // textEdit4
             // 
@@ -332,25 +337,25 @@
             this.textEdit4.StyleController = this.layoutControl2;
             this.textEdit4.TabIndex = 3;
             // 
-            // comboBoxEdit2
+            // CboEstado
             // 
-            this.comboBoxEdit2.Location = new System.Drawing.Point(467, 70);
-            this.comboBoxEdit2.Name = "comboBoxEdit2";
-            this.comboBoxEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CboEstado.Location = new System.Drawing.Point(467, 70);
+            this.CboEstado.Name = "CboEstado";
+            this.CboEstado.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit2.Size = new System.Drawing.Size(270, 20);
-            this.comboBoxEdit2.StyleController = this.layoutControl2;
-            this.comboBoxEdit2.TabIndex = 5;
+            this.CboEstado.Size = new System.Drawing.Size(270, 20);
+            this.CboEstado.StyleController = this.layoutControl2;
+            this.CboEstado.TabIndex = 5;
             // 
-            // comboBoxEdit1
+            // CboMunicipio
             // 
-            this.comboBoxEdit1.Location = new System.Drawing.Point(116, 98);
-            this.comboBoxEdit1.Name = "comboBoxEdit1";
-            this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.CboMunicipio.Location = new System.Drawing.Point(116, 98);
+            this.CboMunicipio.Name = "CboMunicipio";
+            this.CboMunicipio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.comboBoxEdit1.Size = new System.Drawing.Size(241, 20);
-            this.comboBoxEdit1.StyleController = this.layoutControl2;
-            this.comboBoxEdit1.TabIndex = 6;
+            this.CboMunicipio.Size = new System.Drawing.Size(241, 20);
+            this.CboMunicipio.StyleController = this.layoutControl2;
+            this.CboMunicipio.TabIndex = 6;
             // 
             // layoutControlGroup1
             // 
@@ -370,12 +375,12 @@
             this.layoutControlItem3,
             this.layoutControlItem5});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(751, 219);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(751, 221);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem14
             // 
-            this.layoutControlItem14.Control = this.comboBoxEdit5;
+            this.layoutControlItem14.Control = this.CboNombreApoyo;
             this.layoutControlItem14.CustomizationFormText = "Apoyo";
             this.layoutControlItem14.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem14.Name = "layoutControlItem14";
@@ -386,7 +391,7 @@
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.textEdit1;
+            this.layoutControlItem1.Control = this.TxtNombrePredio;
             this.layoutControlItem1.CustomizationFormText = "Nombre";
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 28);
             this.layoutControlItem1.Name = "layoutControlItem1";
@@ -397,7 +402,7 @@
             // 
             // layoutControlItem2
             // 
-            this.layoutControlItem2.Control = this.textEdit2;
+            this.layoutControlItem2.Control = this.TxtSuperficie;
             this.layoutControlItem2.CustomizationFormText = "Superficie Asignada";
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 56);
             this.layoutControlItem2.Name = "layoutControlItem2";
@@ -408,7 +413,7 @@
             // 
             // layoutControlItem9
             // 
-            this.layoutControlItem9.Control = this.textEdit6;
+            this.layoutControlItem9.Control = this.TxtMontoPago;
             this.layoutControlItem9.CustomizationFormText = "Monto de pago";
             this.layoutControlItem9.Location = new System.Drawing.Point(0, 140);
             this.layoutControlItem9.Name = "layoutControlItem9";
@@ -419,7 +424,7 @@
             // 
             // layoutControlItem10
             // 
-            this.layoutControlItem10.Control = this.textEdit7;
+            this.layoutControlItem10.Control = this.TxtMontoAsistencia;
             this.layoutControlItem10.CustomizationFormText = "Monto por asistencia";
             this.layoutControlItem10.Location = new System.Drawing.Point(350, 140);
             this.layoutControlItem10.Name = "layoutControlItem10";
@@ -430,7 +435,7 @@
             // 
             // layoutControlItem6
             // 
-            this.layoutControlItem6.Control = this.comboBoxEdit3;
+            this.layoutControlItem6.Control = this.CboTipoPropietario;
             this.layoutControlItem6.CustomizationFormText = "Tipo de propietario";
             this.layoutControlItem6.Location = new System.Drawing.Point(351, 84);
             this.layoutControlItem6.Name = "layoutControlItem6";
@@ -441,7 +446,7 @@
             // 
             // layoutControlItem8
             // 
-            this.layoutControlItem8.Control = this.textEdit5;
+            this.layoutControlItem8.Control = this.TxtAreaPago;
             this.layoutControlItem8.CustomizationFormText = "Area de pago";
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 112);
             this.layoutControlItem8.Name = "layoutControlItem8";
@@ -452,11 +457,11 @@
             // 
             // layoutControlItem11
             // 
-            this.layoutControlItem11.Control = this.textEdit8;
+            this.layoutControlItem11.Control = this.TxtMontoTotal;
             this.layoutControlItem11.CustomizationFormText = "Monto total";
             this.layoutControlItem11.Location = new System.Drawing.Point(0, 168);
             this.layoutControlItem11.Name = "layoutControlItem11";
-            this.layoutControlItem11.Size = new System.Drawing.Size(731, 31);
+            this.layoutControlItem11.Size = new System.Drawing.Size(731, 33);
             this.layoutControlItem11.Spacing = new DevExpress.XtraLayout.Utils.Padding(2, 2, 2, 2);
             this.layoutControlItem11.Text = "Monto total";
             this.layoutControlItem11.TextSize = new System.Drawing.Size(99, 13);
@@ -474,7 +479,7 @@
             // 
             // layoutControlItem4
             // 
-            this.layoutControlItem4.Control = this.comboBoxEdit2;
+            this.layoutControlItem4.Control = this.CboEstado;
             this.layoutControlItem4.CustomizationFormText = "Estado";
             this.layoutControlItem4.Location = new System.Drawing.Point(351, 56);
             this.layoutControlItem4.Name = "layoutControlItem4";
@@ -485,7 +490,7 @@
             // 
             // layoutControlItem3
             // 
-            this.layoutControlItem3.Control = this.comboBoxEdit1;
+            this.layoutControlItem3.Control = this.CboMunicipio;
             this.layoutControlItem3.CustomizationFormText = "Municipio";
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 84);
             this.layoutControlItem3.Name = "layoutControlItem3";
@@ -496,7 +501,7 @@
             // 
             // layoutControlItem5
             // 
-            this.layoutControlItem5.Control = this.textEdit3;
+            this.layoutControlItem5.Control = this.TxtFolio;
             this.layoutControlItem5.CustomizationFormText = "Folio Apoyo";
             this.layoutControlItem5.Location = new System.Drawing.Point(351, 0);
             this.layoutControlItem5.Name = "layoutControlItem5";
@@ -513,7 +518,7 @@
             this.simpleLabelItem1,
             this.layoutControlItem13});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(779, 327);
+            this.Root.Size = new System.Drawing.Size(779, 330);
             this.Root.TextVisible = false;
             // 
             // simpleLabelItem1
@@ -534,7 +539,7 @@
             this.layoutControlItem13.Control = this.groupControl1;
             this.layoutControlItem13.Location = new System.Drawing.Point(0, 62);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(759, 245);
+            this.layoutControlItem13.Size = new System.Drawing.Size(759, 248);
             this.layoutControlItem13.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem13.TextVisible = false;
             // 
@@ -553,6 +558,7 @@
             this.Name = "FrmPredios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPredios";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmPredios_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -560,18 +566,18 @@
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
             this.layoutControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CboNombreApoyo.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtFolio.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtNombrePredio.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtSuperficie.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMontoPago.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMontoAsistencia.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CboTipoPropietario.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtAreaPago.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TxtMontoTotal.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CboEstado.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CboMunicipio.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
@@ -612,20 +618,20 @@
         private DevExpress.XtraLayout.LayoutControl layoutControl2;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem13;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit5;
+        private DevExpress.XtraEditors.ComboBoxEdit CboNombreApoyo;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem14;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit TxtFolio;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
+        private DevExpress.XtraEditors.TextEdit TxtNombrePredio;
+        private DevExpress.XtraEditors.TextEdit TxtSuperficie;
+        private DevExpress.XtraEditors.TextEdit TxtMontoPago;
+        private DevExpress.XtraEditors.TextEdit TxtMontoAsistencia;
+        private DevExpress.XtraEditors.ComboBoxEdit CboTipoPropietario;
+        private DevExpress.XtraEditors.TextEdit TxtAreaPago;
+        private DevExpress.XtraEditors.TextEdit TxtMontoTotal;
         private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
-        private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+        private DevExpress.XtraEditors.ComboBoxEdit CboEstado;
+        private DevExpress.XtraEditors.ComboBoxEdit CboMunicipio;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem9;

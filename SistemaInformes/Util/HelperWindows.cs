@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraLayout;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,29 @@ namespace SistemaInformes.Util
         }
         public enum ModeOpen{
             Normal,Dialog
+        }
+
+        public static void IsEmptyComponent(LayoutControl layout)
+        {
+            int controlCount=0;
+            Control control;
+            while (controlCount < layout.Controls.Count)
+            {
+                control = layout.Controls[controlCount];
+                XtraMessageBox.Show(control.ToString());
+                if (control.Text == String.Empty)
+                {
+
+                }
+                switch (control)
+                {
+                    //case :
+                    //    break;
+                    default:
+                        break;
+                }
+                controlCount++;
+            }
         }
     }
 }

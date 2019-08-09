@@ -25,7 +25,35 @@ namespace SistemaInformes.Configuraciones
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
+            SettingsConnection.Default.Host = TxtServer.Text.Trim();
+            SettingsConnection.Default.DataBase = TxtDataBase.Text.Trim();
+            SettingsConnection.Default.User = TxtUser.Text.Trim();
+            SettingsConnection.Default.Password = TxtPassword.Text.Trim();
+            SettingsConnection.Default.Save();
             this.Close();
+        }
+
+        private void FrmConfigDB_Load(object sender, EventArgs e)
+        {
+            TxtServer.Text = SettingsConnection.Default.Host;
+            TxtDataBase.Text = SettingsConnection.Default.DataBase;
+            TxtUser.Text = SettingsConnection.Default.User;
+            TxtPassword.Text = SettingsConnection.Default.Password;
+        }
+
+        private void FrmConfigDB_KeyDown(object sender, KeyEventArgs e)
+        {
+            switch (e.KeyCode)
+            {
+                case Keys.Escape:
+                    BtnCancelar_Click(null, null);
+                    break;
+                case Keys.Enter:
+                    BtnGuardar_Click(null, null);
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }

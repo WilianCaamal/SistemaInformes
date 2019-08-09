@@ -26,9 +26,16 @@ namespace SistemaInformes
         {
             LoadConfiguration();
             Thread.Sleep(2000);
+            MenuAccordeon.Enabled = false;
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.ShowDialog();
             frmLogin.Focus();
+
+
+            if (frmLogin.DialogResult == DialogResult.OK)
+            {
+                MenuAccordeon.Enabled = true;
+            }
         }
 
         #region Botones 
@@ -82,6 +89,12 @@ namespace SistemaInformes
         private void Timer_Tick(object sender, EventArgs e)
         {
             BsHora.Caption = DateTime.Now.ToLongTimeString();
+        }
+
+        private void BtnImpresora_Click(object sender, EventArgs e)
+        {
+            FrmConfigPrinter frmConfigPrinter = new FrmConfigPrinter();
+            HelperWindows.OpenForm(frmConfigPrinter,HelperWindows.ModeOpen.Dialog);
         }
     }
 }

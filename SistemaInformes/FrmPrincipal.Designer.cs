@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager SplashManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::SistemaInformes.SplashBienvenida), true, false);
-            DevExpress.Utils.SuperToolTip superToolTip5 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem5 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip6 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem6 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip7 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem7 = new DevExpress.Utils.ToolTipTitleItem();
-            DevExpress.Utils.SuperToolTip superToolTip8 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem8 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem3 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem4 = new DevExpress.Utils.ToolTipTitleItem();
             this.MenuAccordeon = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.BtnApoyos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -92,9 +92,9 @@
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.dossier_folder_24px;
             this.accordionControlElement1.Name = "accordionControlElement1";
-            toolTipTitleItem5.Text = "Catalogos";
-            superToolTip5.Items.Add(toolTipTitleItem5);
-            this.accordionControlElement1.SuperTip = superToolTip5;
+            toolTipTitleItem1.Text = "Catalogos";
+            superToolTip1.Items.Add(toolTipTitleItem1);
+            this.accordionControlElement1.SuperTip = superToolTip1;
             this.accordionControlElement1.Text = "Catalogos";
             // 
             // BtnApoyos
@@ -134,9 +134,9 @@
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)});
             this.accordionControlElement2.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.overview_pages_2_24px;
             this.accordionControlElement2.Name = "accordionControlElement2";
-            toolTipTitleItem6.Text = "Informes";
-            superToolTip6.Items.Add(toolTipTitleItem6);
-            this.accordionControlElement2.SuperTip = superToolTip6;
+            toolTipTitleItem2.Text = "Informes";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.accordionControlElement2.SuperTip = superToolTip2;
             this.accordionControlElement2.Text = "Informes";
             // 
             // accordionControlElement7
@@ -160,9 +160,9 @@
             this.accordionControlElement10});
             this.accordionControlElement3.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.estimate_24px;
             this.accordionControlElement3.Name = "accordionControlElement3";
-            toolTipTitleItem7.Text = "Nominas";
-            superToolTip7.Items.Add(toolTipTitleItem7);
-            this.accordionControlElement3.SuperTip = superToolTip7;
+            toolTipTitleItem3.Text = "Nominas";
+            superToolTip3.Items.Add(toolTipTitleItem3);
+            this.accordionControlElement3.SuperTip = superToolTip3;
             this.accordionControlElement3.Text = "Nominas";
             // 
             // accordionControlElement9
@@ -188,9 +188,9 @@
             this.accordionControlElement11.Expanded = true;
             this.accordionControlElement11.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.maintenance_24px;
             this.accordionControlElement11.Name = "accordionControlElement11";
-            toolTipTitleItem8.Text = "Configuración";
-            superToolTip8.Items.Add(toolTipTitleItem8);
-            this.accordionControlElement11.SuperTip = superToolTip8;
+            toolTipTitleItem4.Text = "Configuración";
+            superToolTip4.Items.Add(toolTipTitleItem4);
+            this.accordionControlElement11.SuperTip = superToolTip4;
             this.accordionControlElement11.Text = "Configuración";
             // 
             // BtnServidor
@@ -207,6 +207,7 @@
             this.BtnImpresora.Name = "BtnImpresora";
             this.BtnImpresora.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.BtnImpresora.Text = "Impresora";
+            this.BtnImpresora.Click += new System.EventHandler(this.BtnImpresora_Click);
             // 
             // BtnDocumentos
             // 
