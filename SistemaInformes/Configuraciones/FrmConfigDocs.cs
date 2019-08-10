@@ -17,6 +17,8 @@ namespace SistemaInformes.Configuraciones
         public FrmConfigDocs()
         {
             InitializeComponent();
+            BtnGuardar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(Keys.Enter);
+            BtnCancelar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(Keys.Escape);
         }
 
         private void BtnExaminarInformes_Click(object sender, EventArgs e)

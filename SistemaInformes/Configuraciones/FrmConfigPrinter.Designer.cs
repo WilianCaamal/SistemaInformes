@@ -191,7 +191,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConfigPrinter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmConfigPrinter";
+            this.Text = "Configuración";
             this.Load += new System.EventHandler(this.FrmConfigPrinter_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmConfigPrinter_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();

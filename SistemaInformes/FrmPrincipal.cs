@@ -42,13 +42,13 @@ namespace SistemaInformes
 
         private void BtnApoyos_Click(object sender, EventArgs e)
         {
-            FrmApoyos frmApoyos = new FrmApoyos();
+            FrmApoyos frmApoyos = new FrmApoyos { MdiParent = this };
             HelperWindows.OpenForm(frmApoyos,HelperWindows.ModeOpen.Normal);
         }
 
         private void BtnPredios_Click(object sender, EventArgs e)
         {
-            FrmPredios frmPredios = new FrmPredios();
+            FrmPredios frmPredios = new FrmPredios { MdiParent = this };
             HelperWindows.OpenForm(frmPredios, HelperWindows.ModeOpen.Normal);
         }
 
@@ -60,14 +60,14 @@ namespace SistemaInformes
 
         private void BtnBeneficiarios_Click(object sender, EventArgs e)
         {
-            FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios();
+            FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios { MdiParent = this };
             HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Normal);
         }
 
         private void BtnDocumentos_Click(object sender, EventArgs e)
         {
             FrmConfigDocs frmConfigDocs = new FrmConfigDocs();
-            HelperWindows.OpenForm(frmConfigDocs, HelperWindows.ModeOpen.Normal);
+            HelperWindows.OpenForm(frmConfigDocs, HelperWindows.ModeOpen.Dialog);
         }
 
         #endregion

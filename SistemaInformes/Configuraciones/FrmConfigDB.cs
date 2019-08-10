@@ -16,20 +16,12 @@ namespace SistemaInformes.Configuraciones
         public FrmConfigDB()
         {
             InitializeComponent();
+            BtnGuardar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(Keys.Enter);
+            BtnCancelar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(Keys.Escape);
         }
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void BtnGuardar_Click(object sender, EventArgs e)
-        {
-            SettingsConnection.Default.Host = TxtServer.Text.Trim();
-            SettingsConnection.Default.DataBase = TxtDataBase.Text.Trim();
-            SettingsConnection.Default.User = TxtUser.Text.Trim();
-            SettingsConnection.Default.Password = TxtPassword.Text.Trim();
-            SettingsConnection.Default.Save();
             this.Close();
         }
 
@@ -41,19 +33,19 @@ namespace SistemaInformes.Configuraciones
             TxtPassword.Text = SettingsConnection.Default.Password;
         }
 
-        private void FrmConfigDB_KeyDown(object sender, KeyEventArgs e)
+        private void BtnGuardar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            switch (e.KeyCode)
-            {
-                case Keys.Escape:
-                    BtnCancelar_Click(null, null);
-                    break;
-                case Keys.Enter:
-                    BtnGuardar_Click(null, null);
-                    break;
-                default:
-                    break;
-            }
+            SettingsConnection.Default.Host = TxtServer.Text.Trim();
+            SettingsConnection.Default.DataBase = TxtDataBase.Text.Trim();
+            SettingsConnection.Default.User = TxtUser.Text.Trim();
+            SettingsConnection.Default.Password = TxtPassword.Text.Trim();
+            SettingsConnection.Default.Save();
+            this.Close();
+        }
+
+        private void BtnCancelar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            this.Close();
         }
     }
 }

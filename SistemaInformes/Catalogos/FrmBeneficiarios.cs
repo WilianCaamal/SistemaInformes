@@ -16,6 +16,8 @@ namespace SistemaInformes.Catalogos
         public FrmBeneficiarios()
         {
             InitializeComponent();
+            BtnGuardar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(Keys.Enter);
+            BtnCancelar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(Keys.Escape);
         }
     }
 }
