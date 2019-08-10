@@ -163,9 +163,9 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 379);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 382);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(692, 35);
+            this.barDockControlBottom.Size = new System.Drawing.Size(692, 32);
             // 
             // barDockControlLeft
             // 
@@ -173,7 +173,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 379);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 382);
             // 
             // barDockControlRight
             // 
@@ -181,7 +181,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(692, 0);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 379);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 382);
             // 
             // layoutControl1
             // 
@@ -190,7 +190,7 @@
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(692, 379);
+            this.layoutControl1.Size = new System.Drawing.Size(692, 382);
             this.layoutControl1.TabIndex = 5;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -199,7 +199,7 @@
             this.xtraTabControl1.Location = new System.Drawing.Point(12, 74);
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(668, 293);
+            this.xtraTabControl1.Size = new System.Drawing.Size(668, 296);
             this.xtraTabControl1.TabIndex = 5;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -209,7 +209,7 @@
             // 
             this.xtraTabPage1.Controls.Add(this.groupControl1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(662, 265);
+            this.xtraTabPage1.Size = new System.Drawing.Size(666, 271);
             this.xtraTabPage1.Text = "Programa";
             // 
             // groupControl1
@@ -231,11 +231,11 @@
             this.layoutControl2.Controls.Add(this.textEdit2);
             this.layoutControl2.Controls.Add(this.textEdit3);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl2.Location = new System.Drawing.Point(2, 20);
+            this.layoutControl2.Location = new System.Drawing.Point(2, 21);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 0, 650, 400);
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(640, 211);
+            this.layoutControl2.Size = new System.Drawing.Size(640, 210);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -300,7 +300,7 @@
             this.layoutControlItem5,
             this.layoutControlItem4});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(640, 211);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(640, 210);
             this.layoutControlGroup1.Spacing = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
             this.layoutControlGroup1.TextVisible = false;
             // 
@@ -339,7 +339,7 @@
             this.layoutControlItem5.Control = this.comboBoxEdit1;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 102);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(618, 87);
+            this.layoutControlItem5.Size = new System.Drawing.Size(618, 86);
             this.layoutControlItem5.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlItem5.Text = "Modalidad";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(61, 13);
@@ -357,7 +357,7 @@
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(662, 265);
+            this.xtraTabPage2.Size = new System.Drawing.Size(666, 268);
             this.xtraTabPage2.Text = "Actividades";
             // 
             // Root
@@ -368,7 +368,7 @@
             this.simpleLabelItem1,
             this.layoutControlItem8});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(692, 379);
+            this.Root.Size = new System.Drawing.Size(692, 382);
             this.Root.TextVisible = false;
             // 
             // simpleLabelItem1
@@ -389,7 +389,7 @@
             this.layoutControlItem8.Control = this.xtraTabControl1;
             this.layoutControlItem8.Location = new System.Drawing.Point(0, 62);
             this.layoutControlItem8.Name = "layoutControlItem8";
-            this.layoutControlItem8.Size = new System.Drawing.Size(672, 297);
+            this.layoutControlItem8.Size = new System.Drawing.Size(672, 300);
             this.layoutControlItem8.Text = "c";
             this.layoutControlItem8.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem8.TextVisible = false;
@@ -405,10 +405,10 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Glow;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmApoyos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Apoyos";
+            this.Text = "Catálogo";
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
