@@ -28,9 +28,8 @@ namespace SistemaInformes
             Thread.Sleep(2000);
             MenuAccordeon.Enabled = false;
             FrmLogin frmLogin = new FrmLogin();
-            frmLogin.ShowDialog();
             frmLogin.Focus();
-
+            frmLogin.ShowDialog();
 
             if (frmLogin.DialogResult == DialogResult.OK)
             {
