@@ -83,7 +83,7 @@
             this.BtnGuardar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnGuardar.Caption = "Guardar";
             this.BtnGuardar.Id = 0;
-            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
+            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.Images24px.save_24px;
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGuardar_ItemClick);
             // 
@@ -92,7 +92,7 @@
             this.BtnCancelar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnCancelar.Caption = "Cancelar";
             this.BtnCancelar.Id = 1;
-            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.Images24px.cancel_24px;
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCancelar_ItemClick);
             // 
@@ -165,7 +165,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Image = global::SistemaInformes.ResourcesImages48px.print_48px;
+            this.label2.Image = global::SistemaInformes.Images48px.print_48px;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
@@ -191,7 +191,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConfigPrinter";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmConfigPrinter";
+            this.Text = "Configuración";
             this.Load += new System.EventHandler(this.FrmConfigPrinter_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmConfigPrinter_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();

@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.TxtServer = new DevExpress.XtraEditors.TextEdit();
             this.TxtDataBase = new DevExpress.XtraEditors.TextEdit();
             this.TxtUser = new DevExpress.XtraEditors.TextEdit();
-            this.BtnGuardar = new DevExpress.XtraEditors.SimpleButton();
-            this.BtnCancelar = new DevExpress.XtraEditors.SimpleButton();
             this.TxtPassword = new DevExpress.XtraEditors.TextEdit();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
@@ -41,8 +40,14 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.BmAcciones = new DevExpress.XtraBars.BarManager(this.components);
+            this.bar2 = new DevExpress.XtraBars.Bar();
+            this.BtnGuardar = new DevExpress.XtraBars.BarButtonItem();
+            this.BtnCancelar = new DevExpress.XtraBars.BarButtonItem();
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtServer.Properties)).BeginInit();
@@ -55,8 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -64,15 +68,13 @@
             this.layoutControl1.Controls.Add(this.TxtServer);
             this.layoutControl1.Controls.Add(this.TxtDataBase);
             this.layoutControl1.Controls.Add(this.TxtUser);
-            this.layoutControl1.Controls.Add(this.BtnGuardar);
-            this.layoutControl1.Controls.Add(this.BtnCancelar);
             this.layoutControl1.Controls.Add(this.TxtPassword);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(617, 0, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(255, 240);
+            this.layoutControl1.Size = new System.Drawing.Size(255, 191);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -100,28 +102,6 @@
             this.TxtUser.StyleController = this.layoutControl1;
             this.TxtUser.TabIndex = 6;
             // 
-            // BtnGuardar
-            // 
-            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
-            this.BtnGuardar.Location = new System.Drawing.Point(18, 186);
-            this.BtnGuardar.Name = "BtnGuardar";
-            this.BtnGuardar.Size = new System.Drawing.Size(102, 28);
-            this.BtnGuardar.StyleController = this.layoutControl1;
-            this.BtnGuardar.TabIndex = 7;
-            this.BtnGuardar.Text = "Guardar";
-            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
-            this.BtnCancelar.Location = new System.Drawing.Point(134, 186);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(103, 28);
-            this.BtnCancelar.StyleController = this.layoutControl1;
-            this.BtnCancelar.TabIndex = 8;
-            this.BtnCancelar.Text = "Cancelar";
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
-            // 
             // TxtPassword
             // 
             this.TxtPassword.Location = new System.Drawing.Point(88, 153);
@@ -140,11 +120,9 @@
             this.layoutControlItem2,
             this.layoutControlItem1,
             this.layoutControlItem3,
-            this.layoutControlItem6,
-            this.layoutControlItem4,
-            this.layoutControlItem5});
+            this.layoutControlItem6});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(255, 240);
+            this.Root.Size = new System.Drawing.Size(255, 191);
             this.Root.Spacing = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
             this.Root.TextVisible = false;
             // 
@@ -210,47 +188,107 @@
             this.layoutControlItem6.Location = new System.Drawing.Point(0, 136);
             this.layoutControlItem6.Name = "layoutControlItem6";
             this.layoutControlItem6.Padding = new DevExpress.XtraLayout.Utils.Padding(1, 1, 1, 1);
-            this.layoutControlItem6.Size = new System.Drawing.Size(233, 32);
+            this.layoutControlItem6.Size = new System.Drawing.Size(233, 33);
             this.layoutControlItem6.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
             this.layoutControlItem6.Text = "Contraseña";
             this.layoutControlItem6.TextSize = new System.Drawing.Size(68, 13);
             // 
-            // layoutControlItem4
+            // BmAcciones
             // 
-            this.layoutControlItem4.Control = this.BtnGuardar;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 168);
-            this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem4.Size = new System.Drawing.Size(116, 50);
-            this.layoutControlItem4.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem4.TextVisible = false;
+            this.BmAcciones.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
+            this.bar2});
+            this.BmAcciones.DockControls.Add(this.barDockControlTop);
+            this.BmAcciones.DockControls.Add(this.barDockControlBottom);
+            this.BmAcciones.DockControls.Add(this.barDockControlLeft);
+            this.BmAcciones.DockControls.Add(this.barDockControlRight);
+            this.BmAcciones.Form = this;
+            this.BmAcciones.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
+            this.BtnGuardar,
+            this.BtnCancelar});
+            this.BmAcciones.MaxItemId = 4;
+            this.BmAcciones.StatusBar = this.bar2;
             // 
-            // layoutControlItem5
+            // bar2
             // 
-            this.layoutControlItem5.Control = this.BtnCancelar;
-            this.layoutControlItem5.Location = new System.Drawing.Point(116, 168);
-            this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.OptionsTableLayoutItem.ColumnIndex = 1;
-            this.layoutControlItem5.OptionsTableLayoutItem.RowIndex = 2;
-            this.layoutControlItem5.Size = new System.Drawing.Size(117, 50);
-            this.layoutControlItem5.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem5.TextVisible = false;
+            this.bar2.BarName = "Barra de estado";
+            this.bar2.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
+            this.bar2.DockCol = 0;
+            this.bar2.DockRow = 0;
+            this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
+            this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.BtnGuardar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.BtnCancelar, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.bar2.OptionsBar.AllowQuickCustomization = false;
+            this.bar2.OptionsBar.DrawDragBorder = false;
+            this.bar2.OptionsBar.UseWholeRow = true;
+            this.bar2.Text = "Barra de estado";
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.BtnGuardar.Caption = "Guardar";
+            this.BtnGuardar.Id = 0;
+            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.Images24px.save_24px;
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGuardar_ItemClick);
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.BtnCancelar.Caption = "Cancelar";
+            this.BtnCancelar.Id = 3;
+            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.Images24px.cancel_24px;
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCancelar_ItemClick);
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.BmAcciones;
+            this.barDockControlTop.Size = new System.Drawing.Size(255, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 191);
+            this.barDockControlBottom.Manager = this.BmAcciones;
+            this.barDockControlBottom.Size = new System.Drawing.Size(255, 32);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.BmAcciones;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 191);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(255, 0);
+            this.barDockControlRight.Manager = this.BmAcciones;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 191);
             // 
             // FrmConfigDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(255, 240);
+            this.ClientSize = new System.Drawing.Size(255, 223);
             this.Controls.Add(this.layoutControl1);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConfigDB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Configuración de Conexion";
+            this.Text = "Configuración";
             this.Load += new System.EventHandler(this.FrmConfigDB_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmConfigDB_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TxtServer.Properties)).EndInit();
@@ -263,9 +301,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -275,8 +313,6 @@
         private DevExpress.XtraEditors.TextEdit TxtServer;
         private DevExpress.XtraEditors.TextEdit TxtDataBase;
         private DevExpress.XtraEditors.TextEdit TxtUser;
-        private DevExpress.XtraEditors.SimpleButton BtnGuardar;
-        private DevExpress.XtraEditors.SimpleButton BtnCancelar;
         private DevExpress.XtraEditors.TextEdit TxtPassword;
         private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
@@ -284,7 +320,13 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraBars.BarManager BmAcciones;
+        private DevExpress.XtraBars.Bar bar2;
+        private DevExpress.XtraBars.BarButtonItem BtnGuardar;
+        private DevExpress.XtraBars.BarButtonItem BtnCancelar;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
     }
 }

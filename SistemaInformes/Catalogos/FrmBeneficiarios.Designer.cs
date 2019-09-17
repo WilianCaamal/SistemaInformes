@@ -140,7 +140,7 @@
             this.BtnGuardar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnGuardar.Caption = "Guardar";
             this.BtnGuardar.Id = 0;
-            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.save_24px;
+            this.BtnGuardar.ImageOptions.Image = global::SistemaInformes.Images24px.save_24px;
             this.BtnGuardar.Name = "BtnGuardar";
             // 
             // BtnEditar
@@ -148,7 +148,7 @@
             this.BtnEditar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnEditar.Caption = "Editar";
             this.BtnEditar.Id = 1;
-            this.BtnEditar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.edit_property_24px;
+            this.BtnEditar.ImageOptions.Image = global::SistemaInformes.Images24px.edit_property_24px;
             this.BtnEditar.Name = "BtnEditar";
             // 
             // BtnEliminar
@@ -156,7 +156,7 @@
             this.BtnEliminar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnEliminar.Caption = "Eliminar";
             this.BtnEliminar.Id = 2;
-            this.BtnEliminar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.delete_24px;
+            this.BtnEliminar.ImageOptions.Image = global::SistemaInformes.Images24px.delete_24px;
             this.BtnEliminar.Name = "BtnEliminar";
             // 
             // BtnCancelar
@@ -164,7 +164,7 @@
             this.BtnCancelar.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
             this.BtnCancelar.Caption = "Cancelar";
             this.BtnCancelar.Id = 3;
-            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.ResourcesImages24px.cancel_24px;
+            this.BtnCancelar.ImageOptions.Image = global::SistemaInformes.Images24px.cancel_24px;
             this.BtnCancelar.Name = "BtnCancelar";
             // 
             // barDockControlTop
@@ -179,9 +179,9 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 203);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 206);
             this.barDockControlBottom.Manager = this.BmAcciones;
-            this.barDockControlBottom.Size = new System.Drawing.Size(491, 35);
+            this.barDockControlBottom.Size = new System.Drawing.Size(491, 32);
             // 
             // barDockControlLeft
             // 
@@ -189,7 +189,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.BmAcciones;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 203);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 206);
             // 
             // barDockControlRight
             // 
@@ -197,7 +197,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(491, 0);
             this.barDockControlRight.Manager = this.BmAcciones;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 203);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 206);
             // 
             // layoutControl1
             // 
@@ -207,7 +207,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(391, 133, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(491, 203);
+            this.layoutControl1.Size = new System.Drawing.Size(491, 206);
             this.layoutControl1.TabIndex = 4;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -216,7 +216,7 @@
             this.groupControl1.Controls.Add(this.layoutControl2);
             this.groupControl1.Location = new System.Drawing.Point(12, 74);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(467, 117);
+            this.groupControl1.Size = new System.Drawing.Size(467, 120);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Datos";
             // 
@@ -227,11 +227,11 @@
             this.layoutControl2.Controls.Add(this.textEdit3);
             this.layoutControl2.Controls.Add(this.comboBoxEdit1);
             this.layoutControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl2.Location = new System.Drawing.Point(2, 20);
+            this.layoutControl2.Location = new System.Drawing.Point(2, 21);
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 77, 650, 451);
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(463, 95);
+            this.layoutControl2.Size = new System.Drawing.Size(463, 97);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -283,7 +283,7 @@
             this.layoutControlItem4,
             this.layoutControlItem5});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(463, 95);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(463, 97);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -309,7 +309,7 @@
             this.layoutControlItem4.Control = this.textEdit3;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 48);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(221, 27);
+            this.layoutControlItem4.Size = new System.Drawing.Size(221, 29);
             this.layoutControlItem4.Text = "Telefono";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(43, 13);
             // 
@@ -318,7 +318,7 @@
             this.layoutControlItem5.Control = this.comboBoxEdit1;
             this.layoutControlItem5.Location = new System.Drawing.Point(221, 48);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(222, 27);
+            this.layoutControlItem5.Size = new System.Drawing.Size(222, 29);
             this.layoutControlItem5.Text = "Puesto";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(43, 13);
             // 
@@ -330,7 +330,7 @@
             this.simpleLabelItem1,
             this.layoutControlItem1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(491, 203);
+            this.Root.Size = new System.Drawing.Size(491, 206);
             this.Root.TextVisible = false;
             // 
             // simpleLabelItem1
@@ -338,7 +338,7 @@
             this.simpleLabelItem1.AllowHotTrack = false;
             this.simpleLabelItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.ResourcesImages48px.user_48px;
+            this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.Images48px.user_48px;
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
             this.simpleLabelItem1.Size = new System.Drawing.Size(471, 62);
@@ -351,7 +351,7 @@
             this.layoutControlItem1.Control = this.groupControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 62);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(471, 121);
+            this.layoutControlItem1.Size = new System.Drawing.Size(471, 124);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -366,10 +366,10 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmBeneficiarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmBeneficiarios";
+            this.Text = "Catálogo";
             ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

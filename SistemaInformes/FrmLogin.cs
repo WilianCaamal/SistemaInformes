@@ -16,22 +16,25 @@ namespace SistemaInformes
         public FrmLogin()
         {
             InitializeComponent();
+            BtnAcceder.ItemShortcut = new DevExpress.XtraBars.BarShortcut(Keys.Enter);
+            BtnCancelar.ItemShortcut = new DevExpress.XtraBars.BarShortcut(Keys.Escape);
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void FrmLogin_Load(object sender, EventArgs e)
         {
-            Application.Exit();
+            Activate();
+            TxtUsuario.Focus();
         }
 
-        private void BtnAcceder_Click(object sender, EventArgs e)
+        private void BtnAcceder_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
 
-        private void FrmLogin_Load(object sender, EventArgs e)
+        private void BtnCancelar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            TxtUsuario.Focus();
+            Application.Exit();
         }
     }
 }
