@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataEntities">
+  <DataContextMoniker Name="/DataEntitiesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="af055799-6899-4f16-aa16-36ab9ec631d0" absoluteBounds="2, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/DataEntitiesDataContext/Asesores" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07982c7e-5076-4108-a6dd-9b7a07c36389" absoluteBounds="2.015, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eeeb7122-1100-48f2-a7a7-47f45e35b87b" absoluteBounds="7.5, 3.875, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/DataEntitiesDataContext/Beneficiarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d5dcec2-b70c-4883-a578-659696488e67" absoluteBounds="7.515, 4.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aa5f7046-5c30-48b2-a28f-e18f2b47bd64" absoluteBounds="3.125, 3.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/DataEntitiesDataContext/Informes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de5ae46b-f44d-4481-a40e-137371678c33" absoluteBounds="3.14, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ab304f8-c167-44ed-bff2-273a4c1556ed" absoluteBounds="5.875, 0.5, 2, 2.5401025390624996">
+      <DataClassMoniker Name="/DataEntitiesDataContext/Predios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6128db29-0229-40d2-a2e2-d1b46afe1891" absoluteBounds="5.89, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f302a628-f835-4047-9b17-39258e253a4f" absoluteBounds="3.25, 5.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataEntitiesDataContext/Puestos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b9dae3d3-c540-420c-8bc7-4e7b36559cd6" absoluteBounds="3.265, 5.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a0352c8-6120-4109-8451-73b9590848bb" absoluteBounds="8.75, 0.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DataEntitiesDataContext/Usuarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2fe64592-a9fe-438e-bca6-6b216eb95421" absoluteBounds="8.765, 1.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4 : 1.53125); (5.875 : 1.53125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DataEntitiesDataContext/Asesores/Asesores_Predios" />
+      <nodes>
+        <classShapeMoniker Id="af055799-6899-4f16-aa16-36ab9ec631d0" />
+        <classShapeMoniker Id="3ab304f8-c167-44ed-bff2-273a4c1556ed" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
