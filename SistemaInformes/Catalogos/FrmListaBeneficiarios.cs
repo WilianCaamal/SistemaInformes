@@ -1,0 +1,76 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using DevExpress.XtraEditors;
+using Entidades;
+using CapaNegocios;
+using SistemaInformes.Util;
+
+namespace SistemaInformes.Catalogos
+{
+    public partial class FrmListaBeneficiarios : DevExpress.XtraEditors.XtraForm
+    {
+        BulBeneficiarios bulBeneficiarios = new BulBeneficiarios();
+        public FrmListaBeneficiarios()
+        {
+            InitializeComponent();
+        }
+
+        private void FrmListaBeneficiarios_Load(object sender, EventArgs e)
+        {
+            CargarBeneficiarios();
+        }
+
+        private void CargarBeneficiarios()
+        {
+            gridBeneficiarios.DataSource = new BulBeneficiarios().ListarTodos();
+            ConfigGrid();
+        }
+
+        private void ConfigGrid()
+        {
+            gridDatos.Columns["IdBeneficiario"].Visible = false; //IdBeneficiario
+            gridDatos.Columns["Direccion"].Visible = false; //Direccion
+            gridDatos.Columns["IdPuesto"].Visible = false; //IdPuesto
+            gridDatos.Columns["FechaEdicion"].Visible = false; //FechaEdicion
+            gridDatos.Columns["FechaEliminado"].Visible = false; //FechaEliminacion
+            gridDatos.Columns["Estatus"].Visible = false; //Estatus
+            gridDatos.Columns["Telefono"].Visible = false; //Telefono
+        }
+
+        #region Botones
+
+        private void BtnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios();
+            HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Normal);
+            if (frmBeneficiarios.DialogResult == DialogResult.Yes)
+            {
+                CargarBeneficiarios();
+            }
+        }
+
+        private void BtnEditar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void BtnEliminar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void BtnCerrar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Close();
+        }
+
+        #endregion
+    }
+}

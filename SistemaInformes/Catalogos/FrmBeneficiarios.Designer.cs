@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.bar1 = new DevExpress.XtraBars.Bar();
-            this.BmAcciones = new DevExpress.XtraBars.BarManager(this.components);
+            this.BmAcciones = new DevExpress.XtraBars.BarManager();
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.BtnGuardar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnEditar = new DevExpress.XtraBars.BarButtonItem();
@@ -230,9 +229,9 @@
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.layoutControl2);
-            this.groupControl1.Location = new System.Drawing.Point(12, 74);
+            this.groupControl1.Location = new System.Drawing.Point(12, 57);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(467, 190);
+            this.groupControl1.Size = new System.Drawing.Size(467, 207);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Datos";
             // 
@@ -250,7 +249,7 @@
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 77, 650, 451);
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(463, 167);
+            this.layoutControl2.Size = new System.Drawing.Size(463, 184);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -289,6 +288,8 @@
             this.TxtTelefono.Location = new System.Drawing.Point(95, 132);
             this.TxtTelefono.MenuManager = this.BmAcciones;
             this.TxtTelefono.Name = "TxtTelefono";
+            this.TxtTelefono.Properties.Mask.EditMask = "000-000-0000";
+            this.TxtTelefono.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.Simple;
             this.TxtTelefono.Size = new System.Drawing.Size(134, 20);
             this.TxtTelefono.StyleController = this.layoutControl2;
             this.TxtTelefono.TabIndex = 6;
@@ -338,7 +339,7 @@
             this.layoutControlItem7,
             this.layoutControlItem8});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(463, 167);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(463, 184);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -364,7 +365,7 @@
             this.layoutControlItem4.Control = this.TxtTelefono;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(221, 27);
+            this.layoutControlItem4.Size = new System.Drawing.Size(221, 44);
             this.layoutControlItem4.Text = "Telefono";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(80, 13);
             // 
@@ -374,7 +375,7 @@
             this.layoutControlItem5.ControlAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.layoutControlItem5.Location = new System.Drawing.Point(221, 120);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(222, 27);
+            this.layoutControlItem5.Size = new System.Drawing.Size(222, 44);
             this.layoutControlItem5.Text = "Puesto";
             this.layoutControlItem5.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(33, 13);
@@ -416,6 +417,7 @@
             this.simpleLabelItem1,
             this.layoutControlItem1});
             this.Root.Name = "Root";
+            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 0, 10);
             this.Root.Size = new System.Drawing.Size(491, 276);
             this.Root.TextVisible = false;
             // 
@@ -427,17 +429,18 @@
             this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.Images48px.user_48px;
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
-            this.simpleLabelItem1.Size = new System.Drawing.Size(471, 62);
-            this.simpleLabelItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 5, 5);
+            this.simpleLabelItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 0, 2);
+            this.simpleLabelItem1.Size = new System.Drawing.Size(471, 55);
+            this.simpleLabelItem1.Spacing = new DevExpress.XtraLayout.Utils.Padding(5, 5, 0, 5);
             this.simpleLabelItem1.Text = "Beneficiario";
             this.simpleLabelItem1.TextSize = new System.Drawing.Size(150, 48);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.groupControl1;
-            this.layoutControlItem1.Location = new System.Drawing.Point(0, 62);
+            this.layoutControlItem1.Location = new System.Drawing.Point(0, 55);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(471, 194);
+            this.layoutControlItem1.Size = new System.Drawing.Size(471, 211);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 

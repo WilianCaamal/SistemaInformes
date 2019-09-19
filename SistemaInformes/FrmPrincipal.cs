@@ -59,7 +59,7 @@ namespace SistemaInformes
 
         private void BtnBeneficiarios_Click(object sender, EventArgs e)
         {
-            FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios { MdiParent = this };
+            FrmListaBeneficiarios frmBeneficiarios = new FrmListaBeneficiarios{ MdiParent = this,Text = "Lista de Beneficiarios" };
             HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Normal);
         }
 

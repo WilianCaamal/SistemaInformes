@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             DevExpress.XtraSplashScreen.SplashScreenManager SplashManager = new DevExpress.XtraSplashScreen.SplashScreenManager(this, typeof(global::SistemaInformes.SplashBienvenida), true, false);
             DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
             DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
@@ -53,7 +52,7 @@
             this.BtnServidor = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.BtnImpresora = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.BtnDocumentos = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.BarManager = new DevExpress.XtraBars.BarManager(this.components);
+            this.BarManager = new DevExpress.XtraBars.BarManager();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.BsUsuario = new DevExpress.XtraBars.BarStaticItem();
             this.BsImpresora = new DevExpress.XtraBars.BarStaticItem();
@@ -63,7 +62,7 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.bar1 = new DevExpress.XtraBars.Bar();
-            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.Timer = new System.Windows.Forms.Timer();
             ((System.ComponentModel.ISupportInitialize)(this.MenuAccordeon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarManager)).BeginInit();
             this.SuspendLayout();

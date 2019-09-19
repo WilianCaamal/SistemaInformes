@@ -34,5 +34,10 @@ namespace CapaNegocios
             BeneficiarioValido(beneficiario);
             return dal.Agregar(beneficiario);
         }
+
+        public List<Beneficiarios> ListarTodos()
+        {
+            return dal.ListarTodos();
+        }
     }
 }
