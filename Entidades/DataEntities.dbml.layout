@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DataEntities">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.625, 8.5" name="DataEntities">
   <DataContextMoniker Name="/DataEntitiesDataContext" />
   <nestedChildShapes>
     <classShape Id="af055799-6899-4f16-aa16-36ab9ec631d0" absoluteBounds="2, 0.5, 2, 2.5401025390625">
@@ -32,7 +32,7 @@
         <elementListCompartment Id="2fe64592-a9fe-438e-bca6-6b216eb95421" absoluteBounds="8.765, 1.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4 : 1.53125); (5.875 : 1.53125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(4 : 1.77005126953125); (5.875 : 1.77005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/DataEntitiesDataContext/Asesores/Asesores_Predios" />
       <nodes>
         <classShapeMoniker Id="af055799-6899-4f16-aa16-36ab9ec631d0" />
@@ -43,6 +43,12 @@
       <DataClassMoniker Name="/DataEntitiesDataContext/Beneficiarios" />
       <nestedChildShapes>
         <elementListCompartment Id="bdf19c04-083e-462c-a509-53e88b3b1b7c" absoluteBounds="6.89, 4.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="42e47f9c-b29d-44c5-9379-9afd0b93b53b" absoluteBounds="9.375, 3.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/DataEntitiesDataContext/All_Beneficiarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="428060bc-d431-4d00-baab-3dc4c7718e22" absoluteBounds="9.39, 3.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

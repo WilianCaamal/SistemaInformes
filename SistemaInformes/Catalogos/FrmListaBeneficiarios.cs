@@ -17,6 +17,7 @@ namespace SistemaInformes.Catalogos
     public partial class FrmListaBeneficiarios : DevExpress.XtraEditors.XtraForm
     {
         BulBeneficiarios bulBeneficiarios = new BulBeneficiarios();
+        private int IdBeneficiario { get; set; }
         public FrmListaBeneficiarios()
         {
             InitializeComponent();
@@ -49,7 +50,7 @@ namespace SistemaInformes.Catalogos
         private void BtnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios();
-            HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Normal);
+            HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Dialog);
             if (frmBeneficiarios.DialogResult == DialogResult.Yes)
             {
                 CargarBeneficiarios();
@@ -58,7 +59,16 @@ namespace SistemaInformes.Catalogos
 
         private void BtnEditar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            FrmBeneficiarios frmBeneficiarios = new FrmBeneficiarios();
+            frmBeneficiarios.Id = IdBeneficiario;
+            if (IdBeneficiario != 0)
+            {
+                HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Dialog);
+                if (frmBeneficiarios.DialogResult == DialogResult.Yes)
+                {
+                    CargarBeneficiarios();
+                }
+            }
         }
 
         private void BtnEliminar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -72,5 +82,11 @@ namespace SistemaInformes.Catalogos
         }
 
         #endregion
+
+        private void gridDatos_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            IdBeneficiario = int.Parse(gridDatos.GetRowCellValue(e.RowHandle, "IdBeneficiario").ToString());
+            
+        }
     }
 }

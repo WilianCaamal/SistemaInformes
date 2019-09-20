@@ -18,6 +18,7 @@ namespace SistemaInformes.Catalogos
     {
         BulBeneficiarios bulBeneficiarios = new BulBeneficiarios();
         Beneficiarios objBeneficiario;
+        public int Id { get; set; }
         public FrmBeneficiarios()
         {
             InitializeComponent();
@@ -31,10 +32,21 @@ namespace SistemaInformes.Catalogos
         {
             try
             {
-                if (bulBeneficiarios.Agregar(GetBeneficiario()))
+                if (Id == 0)
                 {
-                    XtraMessageBox.Show("Registro guardado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (bulBeneficiarios.Agregar(GetBeneficiario()))
+                    {
+                        XtraMessageBox.Show("Registro guardado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                 }
+                else
+                {
+                    if (bulBeneficiarios.Editar(GetBeneficiario()))
+                    {
+                        XtraMessageBox.Show("Registro editado exitosamente", "Editar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+                DialogResult = DialogResult.Yes;
             }
             catch(SqlException ex)
             {
@@ -48,18 +60,7 @@ namespace SistemaInformes.Catalogos
 
         private void BtnEditar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            try
-            {
-                //Code
-            }
-            catch (SqlException ex)
-            {
-                XtraMessageBox.Show(ex.Message, "Error Editar", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                XtraMessageBox.Show(ex.Message, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
+            ActivarControles(true);
         }
 
         private void BtnEliminar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -89,14 +90,16 @@ namespace SistemaInformes.Catalogos
         {
             return new Beneficiarios()
             {
+                IdBeneficiario = Id,
                 Nombre = TxtNombre.Text,
                 ApellidoPaterno = TxtApellidoP.Text,
                 ApellidoMaterno = TxtApellidoM.Text,
                 Direccion = TxtDireccion.Text,
                 Estatus = true,
-                FechaRegistro = DateTime.Now,
+                FechaRegistro = DateTime.Today,
                 IdPredio = 1,//int.Parse(CboPredio.EditValue.ToString()),
                 IdPuesto = 1,//int.Parse(CboPuesto.EditValue.ToString()),
+                Telefono = TxtTelefono.Text.ToString()
             };
         }
 
@@ -115,19 +118,52 @@ namespace SistemaInformes.Catalogos
         {
             try
             {
-                //objBeneficiario = new BulBeneficiarios().GetBeneficiario(id);
-                TxtNombre.Text = objBeneficiario.Nombre;
-                TxtApellidoP.Text = objBeneficiario.ApellidoPaterno;
-                TxtApellidoM.Text = objBeneficiario.ApellidoMaterno;
-                TxtDireccion.Text = objBeneficiario.Direccion;
-                //TxtTelefono.Text = objBeneficiario.Telefono;
-                CboPuesto.EditValue = objBeneficiario.IdPuesto;
-                CboPredio.EditValue = objBeneficiario.IdPredio;
+                objBeneficiario = new BulBeneficiarios().GetById(Id);
+                if (objBeneficiario != null)
+                {
+                    TxtNombre.Text = objBeneficiario.Nombre;
+                    TxtApellidoP.Text = objBeneficiario.ApellidoPaterno;
+                    TxtApellidoM.Text = objBeneficiario.ApellidoMaterno;
+                    TxtDireccion.Text = objBeneficiario.Direccion;
+                    TxtTelefono.Text = objBeneficiario.Telefono;
+                    CboPuesto.EditValue = objBeneficiario.IdPuesto;
+                    CboPredio.EditValue = objBeneficiario.IdPredio;
+                }
+                else
+                {
+                    XtraMessageBox.Show("El registro no existe","Cargar Beneficiario",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                }
             }
             catch (Exception ex)
             {
                 XtraMessageBox.Show(ex.Message, "Error Cargar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void FrmBeneficiarios_Load(object sender, EventArgs e)
+        {
+            if (Id != 0)
+            {
+                ActivarControles(false);
+                CargarBeneficiario(Id);
+            }
+            else
+            {
+                ActivarControles(true);
+            }
+        }
+
+        private void ActivarControles(bool activar)
+        {
+            TxtNombre.Enabled = activar;
+            TxtApellidoP.Enabled = activar;
+            TxtApellidoM.Enabled = activar;
+            TxtDireccion.Enabled = activar;
+            TxtTelefono.Enabled = activar;
+            CboPuesto.Enabled = activar;
+            CboPredio.Enabled = activar;
+            BtnGuardar.Enabled = activar;
+            BtnEditar.Enabled = !activar;
         }
     }
 }

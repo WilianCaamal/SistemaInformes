@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.bar1 = new DevExpress.XtraBars.Bar();
-            this.BmAcciones = new DevExpress.XtraBars.BarManager();
+            this.BmAcciones = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.BtnGuardar = new DevExpress.XtraBars.BarButtonItem();
             this.BtnEditar = new DevExpress.XtraBars.BarButtonItem();
@@ -194,7 +195,7 @@
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 276);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 246);
             this.barDockControlBottom.Manager = this.BmAcciones;
             this.barDockControlBottom.Size = new System.Drawing.Size(491, 32);
             // 
@@ -204,7 +205,7 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.BmAcciones;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 276);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 246);
             // 
             // barDockControlRight
             // 
@@ -212,7 +213,7 @@
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(491, 0);
             this.barDockControlRight.Manager = this.BmAcciones;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 276);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 246);
             // 
             // layoutControl1
             // 
@@ -222,7 +223,7 @@
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(391, 133, 650, 400);
             this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(491, 276);
+            this.layoutControl1.Size = new System.Drawing.Size(491, 246);
             this.layoutControl1.TabIndex = 4;
             this.layoutControl1.Text = "layoutControl1";
             // 
@@ -231,7 +232,7 @@
             this.groupControl1.Controls.Add(this.layoutControl2);
             this.groupControl1.Location = new System.Drawing.Point(12, 57);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(467, 207);
+            this.groupControl1.Size = new System.Drawing.Size(467, 187);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Datos";
             // 
@@ -249,7 +250,7 @@
             this.layoutControl2.Name = "layoutControl2";
             this.layoutControl2.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(716, 77, 650, 451);
             this.layoutControl2.Root = this.layoutControlGroup1;
-            this.layoutControl2.Size = new System.Drawing.Size(463, 184);
+            this.layoutControl2.Size = new System.Drawing.Size(463, 164);
             this.layoutControl2.TabIndex = 0;
             this.layoutControl2.Text = "layoutControl2";
             // 
@@ -260,7 +261,6 @@
             this.CboPredio.Name = "CboPredio";
             this.CboPredio.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.CboPredio.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.CboPredio.Size = new System.Drawing.Size(356, 20);
             this.CboPredio.StyleController = this.layoutControl2;
             this.CboPredio.TabIndex = 10;
@@ -321,7 +321,6 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.CboPuesto.Properties.NullText = "";
             this.CboPuesto.Properties.PopupSizeable = false;
-            this.CboPuesto.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.CboPuesto.Size = new System.Drawing.Size(180, 20);
             this.CboPuesto.StyleController = this.layoutControl2;
             this.CboPuesto.TabIndex = 7;
@@ -339,7 +338,7 @@
             this.layoutControlItem7,
             this.layoutControlItem8});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(463, 184);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(463, 164);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem2
@@ -365,7 +364,7 @@
             this.layoutControlItem4.Control = this.TxtTelefono;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 120);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(221, 44);
+            this.layoutControlItem4.Size = new System.Drawing.Size(221, 24);
             this.layoutControlItem4.Text = "Telefono";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(80, 13);
             // 
@@ -375,7 +374,7 @@
             this.layoutControlItem5.ControlAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.layoutControlItem5.Location = new System.Drawing.Point(221, 120);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(222, 44);
+            this.layoutControlItem5.Size = new System.Drawing.Size(222, 24);
             this.layoutControlItem5.Text = "Puesto";
             this.layoutControlItem5.TextAlignMode = DevExpress.XtraLayout.TextAlignModeItem.AutoSize;
             this.layoutControlItem5.TextSize = new System.Drawing.Size(33, 13);
@@ -417,8 +416,8 @@
             this.simpleLabelItem1,
             this.layoutControlItem1});
             this.Root.Name = "Root";
-            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 0, 10);
-            this.Root.Size = new System.Drawing.Size(491, 276);
+            this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 0, 0);
+            this.Root.Size = new System.Drawing.Size(491, 246);
             this.Root.TextVisible = false;
             // 
             // simpleLabelItem1
@@ -440,7 +439,7 @@
             this.layoutControlItem1.Control = this.groupControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 55);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(471, 211);
+            this.layoutControlItem1.Size = new System.Drawing.Size(471, 191);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -448,7 +447,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 308);
+            this.ClientSize = new System.Drawing.Size(491, 278);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -458,6 +457,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "FrmBeneficiarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.FrmBeneficiarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

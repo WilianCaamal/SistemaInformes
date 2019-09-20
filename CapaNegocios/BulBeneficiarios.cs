@@ -39,5 +39,17 @@ namespace CapaNegocios
         {
             return dal.ListarTodos();
         }
+
+        public Beneficiarios GetById(int Id)
+        {
+            return dal.GetById(Id);
+        }
+
+        public bool Editar(Beneficiarios beneficiario)
+        {
+            beneficiario.FechaEdicion = DateTime.Today;
+            BeneficiarioValido(beneficiario);
+            return dal.Editar(beneficiario);
+        }
     }
 }

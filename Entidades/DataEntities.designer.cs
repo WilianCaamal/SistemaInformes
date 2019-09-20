@@ -124,6 +124,14 @@ namespace Entidades
 				return this.GetTable<Beneficiarios>();
 			}
 		}
+		
+		public System.Data.Linq.Table<All_Beneficiarios> All_Beneficiarios
+		{
+			get
+			{
+				return this.GetTable<All_Beneficiarios>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Asesores")]
@@ -1482,6 +1490,105 @@ namespace Entidades
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.All_Beneficiarios")]
+	public partial class All_Beneficiarios
+	{
+		
+		private int _IdBeneficiario;
+		
+		private string _Nombre;
+		
+		private string _ApellidoPaterno;
+		
+		private string _ApellidoMaterno;
+		
+		private string _Predio;
+		
+		public All_Beneficiarios()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdBeneficiario", DbType="Int NOT NULL")]
+		public int IdBeneficiario
+		{
+			get
+			{
+				return this._IdBeneficiario;
+			}
+			set
+			{
+				if ((this._IdBeneficiario != value))
+				{
+					this._IdBeneficiario = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Nombre
+		{
+			get
+			{
+				return this._Nombre;
+			}
+			set
+			{
+				if ((this._Nombre != value))
+				{
+					this._Nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ApellidoPaterno", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string ApellidoPaterno
+		{
+			get
+			{
+				return this._ApellidoPaterno;
+			}
+			set
+			{
+				if ((this._ApellidoPaterno != value))
+				{
+					this._ApellidoPaterno = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ApellidoMaterno", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string ApellidoMaterno
+		{
+			get
+			{
+				return this._ApellidoMaterno;
+			}
+			set
+			{
+				if ((this._ApellidoMaterno != value))
+				{
+					this._ApellidoMaterno = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Predio", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string Predio
+		{
+			get
+			{
+				return this._Predio;
+			}
+			set
+			{
+				if ((this._Predio != value))
+				{
+					this._Predio = value;
+				}
 			}
 		}
 	}

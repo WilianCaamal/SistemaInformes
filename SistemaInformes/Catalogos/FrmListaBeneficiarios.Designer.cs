@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
             DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
@@ -37,7 +38,7 @@
             this.gridBeneficiarios = new DevExpress.XtraGrid.GridControl();
             this.gridDatos = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.BtnBuscar = new DevExpress.XtraEditors.ButtonEdit();
-            this.BmAcciones = new DevExpress.XtraBars.BarManager();
+            this.BmAcciones = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.BtnNuevo = new DevExpress.XtraBars.BarButtonItem();
             this.BtnEditar = new DevExpress.XtraBars.BarButtonItem();
@@ -92,6 +93,7 @@
             this.gridDatos.OptionsEditForm.ActionOnModifiedRowChange = DevExpress.XtraGrid.Views.Grid.EditFormModifiedAction.Nothing;
             this.gridDatos.OptionsFind.AlwaysVisible = true;
             this.gridDatos.OptionsView.ShowGroupPanel = false;
+            this.gridDatos.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridDatos_RowClick);
             // 
             // BtnBuscar
             // 

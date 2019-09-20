@@ -72,4 +72,13 @@
       <Column Name="Telefono" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.All_Beneficiarios" Member="All_Beneficiarios">
+    <Type Name="All_Beneficiarios">
+      <Column Name="IdBeneficiario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidoPaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidoMaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Predio" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
 </Database>
