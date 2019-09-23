@@ -67,7 +67,17 @@ namespace SistemaInformes.Catalogos
         {
             try
             {
-                //Code
+                if (Id != 0)
+                {
+                    if (XtraMessageBox.Show("Eliminar Registro","Eliminar",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        if (bulBeneficiarios.Eliminar(Id))
+                        {
+                            XtraMessageBox.Show("Registro eliminado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            DialogResult = DialogResult.Yes;
+                        }
+                    }
+                }
             }
             catch (SqlException ex)
             {
