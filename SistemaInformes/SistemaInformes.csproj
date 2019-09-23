@@ -88,6 +88,12 @@
     <Compile Include="Catalogos\FrmListaBeneficiarios.Designer.cs">
       <DependentUpon>FrmListaBeneficiarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Catalogos\FrmListaPredios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmListaPredios.Designer.cs">
+      <DependentUpon>FrmListaPredios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Catalogos\FrmPredios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogos\FrmListaBeneficiarios.resx">
       <DependentUpon>FrmListaBeneficiarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmListaPredios.resx">
+      <DependentUpon>FrmListaPredios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogos\FrmPredios.resx">
       <DependentUpon>FrmPredios.cs</DependentUpon>

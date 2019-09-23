@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="BulBeneficiarios.cs" />
     <Compile Include="BulConfig.cs" />
+    <Compile Include="BulPredios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

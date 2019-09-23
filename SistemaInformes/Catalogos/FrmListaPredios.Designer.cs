@@ -1,6 +1,6 @@
 ﻿namespace SistemaInformes.Catalogos
 {
-    partial class FrmListaBeneficiarios
+    partial class FrmListaPredios
     {
         /// <summary>
         /// Required designer variable.
@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions2 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject5 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject6 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject7 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject8 = new DevExpress.Utils.SerializableAppearanceObject();
-            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.gridBeneficiarios = new DevExpress.XtraGrid.GridControl();
-            this.gridDatos = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.BtnBuscar = new DevExpress.XtraEditors.ButtonEdit();
             this.BmAcciones = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.BtnNuevo = new DevExpress.XtraBars.BarButtonItem();
@@ -48,63 +39,21 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.gridPredios = new DevExpress.XtraGrid.GridControl();
+            this.gridDatos = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.simpleLabelItem1 = new DevExpress.XtraLayout.SimpleLabelItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridBeneficiarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPredios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnBuscar.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // layoutControl1
-            // 
-            this.layoutControl1.Controls.Add(this.gridBeneficiarios);
-            this.layoutControl1.Controls.Add(this.BtnBuscar);
-            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Name = "layoutControl1";
-            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(683, 56, 650, 400);
-            this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(635, 272);
-            this.layoutControl1.TabIndex = 0;
-            this.layoutControl1.Text = "layoutControl1";
-            // 
-            // gridBeneficiarios
-            // 
-            this.gridBeneficiarios.Location = new System.Drawing.Point(12, 52);
-            this.gridBeneficiarios.MainView = this.gridDatos;
-            this.gridBeneficiarios.Name = "gridBeneficiarios";
-            this.gridBeneficiarios.Size = new System.Drawing.Size(611, 208);
-            this.gridBeneficiarios.TabIndex = 4;
-            this.gridBeneficiarios.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridDatos});
-            // 
-            // gridDatos
-            // 
-            this.gridDatos.GridControl = this.gridBeneficiarios;
-            this.gridDatos.Name = "gridDatos";
-            this.gridDatos.OptionsBehavior.Editable = false;
-            this.gridDatos.OptionsEditForm.ActionOnModifiedRowChange = DevExpress.XtraGrid.Views.Grid.EditFormModifiedAction.Nothing;
-            this.gridDatos.OptionsFind.AlwaysVisible = true;
-            this.gridDatos.OptionsView.ShowGroupPanel = false;
-            this.gridDatos.RowClick += new DevExpress.XtraGrid.Views.Grid.RowClickEventHandler(this.gridDatos_RowClick);
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Location = new System.Drawing.Point(62, 64);
-            this.BtnBuscar.MenuManager = this.BmAcciones;
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Search, "Buscar", -1, true, true, true, editorButtonImageOptions2, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject5, serializableAppearanceObject6, serializableAppearanceObject7, serializableAppearanceObject8, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
-            this.BtnBuscar.Size = new System.Drawing.Size(205, 20);
-            this.BtnBuscar.StyleController = this.layoutControl1;
-            this.BtnBuscar.TabIndex = 5;
             // 
             // BmAcciones
             // 
@@ -147,7 +96,6 @@
             this.BtnNuevo.Id = 0;
             this.BtnNuevo.ImageOptions.Image = global::SistemaInformes.Images24px.add_24px;
             this.BtnNuevo.Name = "BtnNuevo";
-            this.BtnNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnNuevo_ItemClick);
             // 
             // BtnEditar
             // 
@@ -156,7 +104,6 @@
             this.BtnEditar.Id = 1;
             this.BtnEditar.ImageOptions.Image = global::SistemaInformes.Images24px.edit_property_24px;
             this.BtnEditar.Name = "BtnEditar";
-            this.BtnEditar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnEditar_ItemClick);
             // 
             // BtnEliminar
             // 
@@ -165,7 +112,6 @@
             this.BtnEliminar.Id = 2;
             this.BtnEliminar.ImageOptions.Image = global::SistemaInformes.Images24px.delete_24px;
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnEliminar_ItemClick);
             // 
             // BtnCerrar
             // 
@@ -174,7 +120,6 @@
             this.BtnCerrar.Id = 3;
             this.BtnCerrar.ImageOptions.Image = global::SistemaInformes.Images24px.cancel_24px;
             this.BtnCerrar.Name = "BtnCerrar";
-            this.BtnCerrar.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnCerrar_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -182,15 +127,15 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.BmAcciones;
-            this.barDockControlTop.Size = new System.Drawing.Size(635, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(636, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 272);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 292);
             this.barDockControlBottom.Manager = this.BmAcciones;
-            this.barDockControlBottom.Size = new System.Drawing.Size(635, 32);
+            this.barDockControlBottom.Size = new System.Drawing.Size(636, 32);
             // 
             // barDockControlLeft
             // 
@@ -198,15 +143,46 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.BmAcciones;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 272);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 292);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(635, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(636, 0);
             this.barDockControlRight.Manager = this.BmAcciones;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 272);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 292);
+            // 
+            // layoutControl1
+            // 
+            this.layoutControl1.Controls.Add(this.gridPredios);
+            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.layoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.layoutControl1.Name = "layoutControl1";
+            this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(684, 44, 650, 400);
+            this.layoutControl1.Root = this.Root;
+            this.layoutControl1.Size = new System.Drawing.Size(636, 292);
+            this.layoutControl1.TabIndex = 4;
+            this.layoutControl1.Text = "layoutControl1";
+            // 
+            // gridPredios
+            // 
+            this.gridPredios.Location = new System.Drawing.Point(12, 52);
+            this.gridPredios.MainView = this.gridDatos;
+            this.gridPredios.MenuManager = this.BmAcciones;
+            this.gridPredios.Name = "gridPredios";
+            this.gridPredios.Size = new System.Drawing.Size(612, 228);
+            this.gridPredios.TabIndex = 4;
+            this.gridPredios.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridDatos});
+            // 
+            // gridDatos
+            // 
+            this.gridDatos.GridControl = this.gridPredios;
+            this.gridDatos.Name = "gridDatos";
+            this.gridDatos.OptionsFind.AlwaysVisible = true;
+            this.gridDatos.OptionsFind.ShowCloseButton = false;
+            this.gridDatos.OptionsView.ShowGroupPanel = false;
             // 
             // Root
             // 
@@ -217,7 +193,7 @@
             this.layoutControlItem1});
             this.Root.Name = "Root";
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(10, 10, 0, 10);
-            this.Root.Size = new System.Drawing.Size(635, 272);
+            this.Root.Size = new System.Drawing.Size(636, 292);
             this.Root.TextVisible = false;
             // 
             // simpleLabelItem1
@@ -225,46 +201,43 @@
             this.simpleLabelItem1.AllowHotTrack = false;
             this.simpleLabelItem1.AppearanceItemCaption.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleLabelItem1.AppearanceItemCaption.Options.UseFont = true;
-            this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.Images48px.groups_48px;
+            this.simpleLabelItem1.ImageOptions.Image = global::SistemaInformes.Images48px.map_marker_48px;
             this.simpleLabelItem1.Location = new System.Drawing.Point(0, 0);
             this.simpleLabelItem1.Name = "simpleLabelItem1";
             this.simpleLabelItem1.Padding = new DevExpress.XtraLayout.Utils.Padding(2, 2, 0, 2);
-            this.simpleLabelItem1.Size = new System.Drawing.Size(615, 50);
-            this.simpleLabelItem1.Text = "Lista de Beneficiarios";
-            this.simpleLabelItem1.TextSize = new System.Drawing.Size(227, 48);
+            this.simpleLabelItem1.Size = new System.Drawing.Size(616, 50);
+            this.simpleLabelItem1.Text = "Lista de predios";
+            this.simpleLabelItem1.TextSize = new System.Drawing.Size(182, 48);
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.gridBeneficiarios;
-            this.layoutControlItem1.ControlAlignment = System.Drawing.ContentAlignment.MiddleRight;
+            this.layoutControlItem1.Control = this.gridPredios;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 50);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(615, 212);
-            this.layoutControlItem1.Text = "GridBeneficiarios";
+            this.layoutControlItem1.Size = new System.Drawing.Size(616, 232);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // FrmListaBeneficiarios
+            // FrmListaPredios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 304);
+            this.ClientSize = new System.Drawing.Size(636, 324);
             this.Controls.Add(this.layoutControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "FrmListaBeneficiarios";
+            this.Name = "FrmListaPredios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FrmListaPredios";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmListaBeneficiarios_Load);
+            this.Load += new System.EventHandler(this.FrmListaPredios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridBeneficiarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridPredios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnBuscar.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.simpleLabelItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
@@ -275,13 +248,6 @@
 
         #endregion
 
-        private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraGrid.GridControl gridBeneficiarios;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridDatos;
-        private DevExpress.XtraLayout.LayoutControlGroup Root;
-        private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
-        private DevExpress.XtraEditors.ButtonEdit BtnBuscar;
         private DevExpress.XtraBars.BarManager BmAcciones;
         private DevExpress.XtraBars.Bar bar2;
         private DevExpress.XtraBars.BarButtonItem BtnNuevo;
@@ -292,5 +258,11 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
+        private DevExpress.XtraLayout.LayoutControl layoutControl1;
+        private DevExpress.XtraGrid.GridControl gridPredios;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridDatos;
+        private DevExpress.XtraLayout.LayoutControlGroup Root;
+        private DevExpress.XtraLayout.SimpleLabelItem simpleLabelItem1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
 }

@@ -47,7 +47,7 @@ namespace SistemaInformes
 
         private void BtnPredios_Click(object sender, EventArgs e)
         {
-            FrmPredios frmPredios = new FrmPredios { MdiParent = this };
+            FrmListaPredios frmPredios = new FrmListaPredios { MdiParent = this, Text = "Lista de Predios" };
             HelperWindows.OpenForm(frmPredios, HelperWindows.ModeOpen.Normal);
         }
 
