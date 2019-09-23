@@ -12,7 +12,7 @@ namespace CapaDatos
     {
         public List<Beneficiarios> ListarTodos()
         {
-            return Db.GetContext().Beneficiarios.ToList();
+            return Db.GetContext().Beneficiarios.Where(b=>b.Estatus.Equals(true)).ToList();
         }
         public bool Agregar(Beneficiarios beneficiario)
         {
@@ -26,17 +26,26 @@ namespace CapaDatos
             return Db.GetContext().Beneficiarios.FirstOrDefault(b => b.IdBeneficiario.Equals(Id));
         }
 
-        public bool Editar(Beneficiarios beneficiario)
+        public bool Editar(Beneficiarios obj)
         {
-            Beneficiarios objBeneficiario = Db.GetContext().Beneficiarios.SingleOrDefault(b => b.IdBeneficiario.Equals(beneficiario.IdBeneficiario));
-            objBeneficiario.Nombre = beneficiario.Nombre;
-            objBeneficiario.ApellidoMaterno = beneficiario.ApellidoMaterno;
-            objBeneficiario.ApellidoPaterno = beneficiario.ApellidoPaterno;
-            objBeneficiario.Direccion = beneficiario.Direccion;
-            objBeneficiario.FechaEdicion = beneficiario.FechaEdicion;
-            objBeneficiario.IdPredio = beneficiario.IdPredio;
-            objBeneficiario.IdPuesto = beneficiario.IdPuesto;
-            objBeneficiario.Telefono = beneficiario.Telefono;
+            Beneficiarios objBeneficiario = Db.GetContext().Beneficiarios.SingleOrDefault(b => b.IdBeneficiario.Equals(obj.IdBeneficiario));
+            objBeneficiario.Nombre = obj.Nombre;
+            objBeneficiario.ApellidoMaterno = obj.ApellidoMaterno;
+            objBeneficiario.ApellidoPaterno = obj.ApellidoPaterno;
+            objBeneficiario.Direccion = obj.Direccion;
+            objBeneficiario.FechaEdicion = obj.FechaEdicion;
+            objBeneficiario.IdPredio = obj.IdPredio;
+            objBeneficiario.IdPuesto = obj.IdPuesto;
+            objBeneficiario.Telefono = obj.Telefono;
+            Db.GetContext().SubmitChanges();
+            return true;
+        }
+
+        public bool Eliminar(int Id)
+        {
+            Beneficiarios objBeneficiario = Db.GetContext().Beneficiarios.SingleOrDefault(b => b.IdBeneficiario.Equals(Id));
+            objBeneficiario.Estatus = false;
+            objBeneficiario.FechaEliminado = DateTime.Today;
             Db.GetContext().SubmitChanges();
             return true;
         }

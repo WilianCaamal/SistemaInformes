@@ -73,7 +73,24 @@ namespace SistemaInformes.Catalogos
 
         private void BtnEliminar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            try
+            {
+                if (IdBeneficiario != 0)
+                {
+                    if (XtraMessageBox.Show("Eliminar Registro", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        if (bulBeneficiarios.Eliminar(IdBeneficiario))
+                        {
+                            XtraMessageBox.Show("Registro eliminado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            CargarBeneficiarios();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message, "Error Eliminar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void BtnCerrar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

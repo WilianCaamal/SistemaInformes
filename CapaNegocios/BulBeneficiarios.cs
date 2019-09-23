@@ -51,5 +51,10 @@ namespace CapaNegocios
             BeneficiarioValido(beneficiario);
             return dal.Editar(beneficiario);
         }
+
+        public bool Eliminar(int Id)
+        {
+            return dal.Eliminar(Id);
+        }
     }
 }
