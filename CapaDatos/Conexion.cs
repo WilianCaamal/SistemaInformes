@@ -18,7 +18,8 @@ namespace CapaDatos
             }
             else
             {
-                return new DataEntitiesDataContext(Properties.Settings.Default.StringConnection);
+                context = new DataEntitiesDataContext(Properties.Settings.Default.StringConnection);
+                return context;
             }
         }
     }
