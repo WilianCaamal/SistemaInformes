@@ -112,10 +112,10 @@
     <Compile Include="Configuraciones\FrmConfigPrinter.Designer.cs">
       <DependentUpon>FrmConfigPrinter.cs</DependentUpon>
     </Compile>
-    <Compile Include="Configuraciones\SettingsConnection.Designer.cs">
+    <Compile Include="Configuraciones\Connection.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>SettingsConnection.settings</DependentUpon>
+      <DependentUpon>Connection.settings</DependentUpon>
     </Compile>
     <Compile Include="Configuraciones\SettingsDocuments.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -207,9 +207,9 @@
       <DependentUpon>SplashBienvenida.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
-    <None Include="Configuraciones\SettingsConnection.settings">
+    <None Include="Configuraciones\Connection.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>SettingsConnection.Designer.cs</LastGenOutput>
+      <LastGenOutput>Connection.Designer.cs</LastGenOutput>
     </None>
     <None Include="Configuraciones\SettingsDocuments.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
