@@ -3,9 +3,25 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entidades;
 
 namespace CapaDatos
 {
+    public static class Db
+    {
+        private static DataEntitiesDataContext context;
+        public static DataEntitiesDataContext GetContext()
+        {
+            if (context != null)
+            {
+                return context;
+            }
+            else
+            {
+                return new DataEntitiesDataContext(Properties.Settings.Default.StringConnection);
+            }
+        }
+    }
     public class Conexion
     {
         private string ConnectionBase = "Data Source={0};"+
