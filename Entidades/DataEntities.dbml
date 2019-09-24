@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SistemaInformes" Class="DataEntitiesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=SistemaInformes;Integrated Security=True" SettingsObjectName="Entidades.Properties.Settings" SettingsPropertyName="SistemaInformesConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.67;Initial Catalog=SistemaInformes;Persist Security Info=True;User ID=sa" SettingsObjectName="Entidades.Properties.Settings" SettingsPropertyName="SistemaInformesConnectionString1" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Asesores" Member="Asesores">
     <Type Name="Asesores">
       <Column Name="IdAsesor" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -12,6 +12,23 @@
       <Column Name="Usuario" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Contrasena" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
       <Association Name="Asesores_Predios" Member="Predios" ThisKey="IdAsesor" OtherKey="IdAsesor" Type="Predios" />
+      <Association Name="Asesores_Usuarios" Member="Usuarios" ThisKey="IdAsesor" OtherKey="IdAsesor" Type="Usuarios" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Beneficiarios" Member="Beneficiarios">
+    <Type Name="Beneficiarios">
+      <Column Name="IdBeneficiario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidoPaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ApellidoMaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="IdPuesto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FechaRegistro" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="FechaEdicion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="FechaEliminado" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdPredio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Telefono" Type="System.String" DbType="NChar(12)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Informes" Member="Informes">
@@ -43,6 +60,7 @@
       <Column Name="FechaEdicion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="FechaElimado" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="Estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="IdRegistro" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.Usuarios" Member="Usuarios">
@@ -54,31 +72,8 @@
       <Column Name="FechaEdicion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="FechaEliminado" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="Estatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.Beneficiarios" Member="Beneficiarios">
-    <Type Name="Beneficiarios">
-      <Column Name="IdBeneficiario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ApellidoPaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ApellidoMaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Direccion" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
-      <Column Name="IdPuesto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FechaRegistro" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Column Name="FechaEdicion" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="FechaEliminado" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="IdPredio" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Telefono" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.All_Beneficiarios" Member="All_Beneficiarios">
-    <Type Name="All_Beneficiarios">
-      <Column Name="IdBeneficiario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ApellidoPaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="ApellidoMaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="Predio" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="IdAsesor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Asesores_Usuarios" Member="Asesores" ThisKey="IdAsesor" OtherKey="IdAsesor" Type="Asesores" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
