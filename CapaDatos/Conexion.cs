@@ -22,6 +22,11 @@ namespace CapaDatos
                 return context;
             }
         }
+
+        public static void ResetContext()
+        {
+            context = null;
+        }
     }
     public class Conexion
     {
@@ -44,6 +49,7 @@ namespace CapaDatos
             string con = String.Format(ConnectionBase, host, database, user, password);
             Properties.Settings.Default.StringConnection = con;
             Properties.Settings.Default.Save();
+            Db.ResetContext();
             return true;
         }
     }
