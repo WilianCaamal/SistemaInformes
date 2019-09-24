@@ -16,7 +16,7 @@ namespace SistemaInformes.Catalogos
 {
     public partial class FrmBeneficiarios : DevExpress.XtraEditors.XtraForm
     {
-        BulBeneficiarios bulBeneficiarios = new BulBeneficiarios();
+        BllBeneficiarios bllBeneficiarios = new BllBeneficiarios();
         Beneficiarios objBeneficiario;
         public int Id { get; set; }
         public FrmBeneficiarios()
@@ -34,14 +34,14 @@ namespace SistemaInformes.Catalogos
             {
                 if (Id == 0)
                 {
-                    if (bulBeneficiarios.Agregar(GetBeneficiario()))
+                    if (bllBeneficiarios.Agregar(GetBeneficiario()))
                     {
                         XtraMessageBox.Show("Registro guardado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
                 else
                 {
-                    if (bulBeneficiarios.Editar(GetBeneficiario()))
+                    if (bllBeneficiarios.Editar(GetBeneficiario()))
                     {
                         XtraMessageBox.Show("Registro editado exitosamente", "Editar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
@@ -71,7 +71,7 @@ namespace SistemaInformes.Catalogos
                 {
                     if (XtraMessageBox.Show("Eliminar Registro","Eliminar",MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        if (bulBeneficiarios.Eliminar(Id))
+                        if (bllBeneficiarios.Eliminar(Id))
                         {
                             XtraMessageBox.Show("Registro eliminado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             DialogResult = DialogResult.Yes;
@@ -128,7 +128,7 @@ namespace SistemaInformes.Catalogos
         {
             try
             {
-                objBeneficiario = new BulBeneficiarios().GetById(Id);
+                objBeneficiario = new BllBeneficiarios().GetById(Id);
                 if (objBeneficiario != null)
                 {
                     TxtNombre.Text = objBeneficiario.Nombre;

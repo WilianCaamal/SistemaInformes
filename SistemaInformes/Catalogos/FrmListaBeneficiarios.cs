@@ -16,7 +16,7 @@ namespace SistemaInformes.Catalogos
 {
     public partial class FrmListaBeneficiarios : DevExpress.XtraEditors.XtraForm
     {
-        BulBeneficiarios bulBeneficiarios = new BulBeneficiarios();
+        BllBeneficiarios bllBeneficiarios = new BllBeneficiarios();
         private int IdBeneficiario { get; set; }
         public FrmListaBeneficiarios()
         {
@@ -30,8 +30,15 @@ namespace SistemaInformes.Catalogos
 
         private void CargarBeneficiarios()
         {
-            gridBeneficiarios.DataSource = new BulBeneficiarios().ListarTodos();
-            ConfigGrid();
+            try
+            {
+                gridBeneficiarios.DataSource = bllBeneficiarios.ListarTodos();
+                ConfigGrid();
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message, "Cargar Beneficiarios",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
 
         private void ConfigGrid()
@@ -79,7 +86,7 @@ namespace SistemaInformes.Catalogos
                 {
                     if (XtraMessageBox.Show("Eliminar Registro", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        if (bulBeneficiarios.Eliminar(IdBeneficiario))
+                        if (bllBeneficiarios.Eliminar(IdBeneficiario))
                         {
                             XtraMessageBox.Show("Registro eliminado exitosamente", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             CargarBeneficiarios();

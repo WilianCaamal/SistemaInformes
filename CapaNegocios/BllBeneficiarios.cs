@@ -8,7 +8,7 @@ using CapaDatos;
 
 namespace CapaNegocios
 {
-    public class BulBeneficiarios
+    public class BllBeneficiarios
     {
         DalBeneficiarios dal = new DalBeneficiarios();
         private readonly String textError = "Los siguientes campos no pueden estar vacios:";

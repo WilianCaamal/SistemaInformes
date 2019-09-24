@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BulBeneficiarios.cs" />
+    <Compile Include="BllBeneficiarios.cs" />
     <Compile Include="BulConfig.cs" />
     <Compile Include="BulPredios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
