@@ -41,13 +41,13 @@ namespace SistemaInformes
 
         private void BtnApoyos_Click(object sender, EventArgs e)
         {
-            FrmApoyos frmApoyos = new FrmApoyos { MdiParent = this };
+            FrmApoyos frmApoyos = new FrmApoyos { MdiParent = this, Text = "Lista de Apoyos", Dock=DockStyle.Fill };
             HelperWindows.OpenForm(frmApoyos,HelperWindows.ModeOpen.Normal);
         }
 
         private void BtnPredios_Click(object sender, EventArgs e)
         {
-            FrmListaPredios frmPredios = new FrmListaPredios { MdiParent = this, Text = "Lista de Predios" };
+            FrmListaPredios frmPredios = new FrmListaPredios { MdiParent = this, Text = "Lista de Predios", Dock = DockStyle.Fill };
             HelperWindows.OpenForm(frmPredios, HelperWindows.ModeOpen.Normal);
         }
 
@@ -59,7 +59,7 @@ namespace SistemaInformes
 
         private void BtnBeneficiarios_Click(object sender, EventArgs e)
         {
-            FrmListaBeneficiarios frmBeneficiarios = new FrmListaBeneficiarios{ MdiParent = this,Text = "Lista de Beneficiarios" };
+            FrmListaBeneficiarios frmBeneficiarios = new FrmListaBeneficiarios{ MdiParent = this,Text = "Lista de Beneficiarios", Dock = DockStyle.Fill };
             HelperWindows.OpenForm(frmBeneficiarios, HelperWindows.ModeOpen.Normal);
         }
 
