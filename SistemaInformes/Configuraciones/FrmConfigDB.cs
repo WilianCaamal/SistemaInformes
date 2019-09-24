@@ -34,6 +34,7 @@ namespace SistemaInformes.Configuraciones
         {
             try
             {
+                SaveParams();
                 bool response = config.SaveConfig(
                     Connection.Default.Host,
                     Connection.Default.DataBase,
