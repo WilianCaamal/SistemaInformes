@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BllBeneficiarios.cs" />
+    <Compile Include="BllEstados.cs" />
+    <Compile Include="BllLocalidades.cs" />
+    <Compile Include="BllMunicipios.cs" />
     <Compile Include="BulConfig.cs" />
-    <Compile Include="BulPredios.cs" />
+    <Compile Include="BllPredios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

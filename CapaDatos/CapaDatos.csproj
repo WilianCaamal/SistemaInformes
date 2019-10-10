@@ -44,6 +44,9 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="DalBeneficiarios.cs" />
+    <Compile Include="DalEstados.cs" />
+    <Compile Include="DalLocalidades.cs" />
+    <Compile Include="DalMunicipios.cs" />
     <Compile Include="DalPredios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

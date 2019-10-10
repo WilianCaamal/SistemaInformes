@@ -14,7 +14,7 @@ namespace SistemaInformes.Catalogos
 {
     public partial class FrmListaPredios : DevExpress.XtraEditors.XtraForm
     {
-        BulPredios bulPredios = new BulPredios();
+        BllPredios bulPredios = new BllPredios();
         public FrmListaPredios()
         {
             InitializeComponent();
@@ -30,7 +30,6 @@ namespace SistemaInformes.Catalogos
             try
             {
                 gridPredios.DataSource = bulPredios.ListarTodos();
-                XtraMessageBox.Show(bulPredios.ListarTodos()[0].Asesores.Nombre);
                 ConfigGrid();
             }
             catch (Exception ex)
@@ -45,9 +44,13 @@ namespace SistemaInformes.Catalogos
             gridDatos.Columns["FechaEdicion"].Visible = false;
             gridDatos.Columns["FechaEliminado"].Visible = false;
             gridDatos.Columns["Estatus"].Visible = false;
-
             gridDatos.Columns["Superficie"].Caption = "Superficie [Ha]";
+        }
 
+        private void BtnNuevo_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmPredios frm = new FrmPredios();
+            frm.ShowDialog();
         }
     }
 }

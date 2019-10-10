@@ -8,12 +8,17 @@ using System.Threading.Tasks;
 
 namespace CapaNegocios
 {
-    public class BulPredios
+    public class BllPredios
     {
         DalPredios dal = new DalPredios();
         public List<Predios> ListarTodos()
         {
             return dal.ListarTodos();
+        }
+
+        public bool Agregar(Predios predio)
+        {
+            return dal.Agregar(predio);
         }
     }
 }
