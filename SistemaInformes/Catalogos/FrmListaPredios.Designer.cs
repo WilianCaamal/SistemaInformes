@@ -96,6 +96,7 @@
             this.BtnNuevo.Id = 0;
             this.BtnNuevo.ImageOptions.Image = global::SistemaInformes.Images24px.add_24px;
             this.BtnNuevo.Name = "BtnNuevo";
+            this.BtnNuevo.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnNuevo_ItemClick);
             // 
             // BtnEditar
             // 
