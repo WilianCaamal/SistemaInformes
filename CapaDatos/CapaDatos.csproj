@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="DalApoyos.cs" />
     <Compile Include="DalBeneficiarios.cs" />
     <Compile Include="DalEstados.cs" />
     <Compile Include="DalLocalidades.cs" />

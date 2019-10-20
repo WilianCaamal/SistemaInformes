@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.gridPredios = new DevExpress.XtraGrid.GridControl();
+            this.gridApoyos = new DevExpress.XtraGrid.GridControl();
             this.gridDatos = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.BmAcciones = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
@@ -47,7 +47,7 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridPredios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridApoyos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -57,7 +57,7 @@
             // 
             // layoutControl1
             // 
-            this.layoutControl1.Controls.Add(this.gridPredios);
+            this.layoutControl1.Controls.Add(this.gridApoyos);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -66,20 +66,20 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // gridPredios
+            // gridApoyos
             // 
-            this.gridPredios.Location = new System.Drawing.Point(12, 52);
-            this.gridPredios.MainView = this.gridDatos;
-            this.gridPredios.MenuManager = this.BmAcciones;
-            this.gridPredios.Name = "gridPredios";
-            this.gridPredios.Size = new System.Drawing.Size(818, 281);
-            this.gridPredios.TabIndex = 4;
-            this.gridPredios.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridApoyos.Location = new System.Drawing.Point(12, 52);
+            this.gridApoyos.MainView = this.gridDatos;
+            this.gridApoyos.MenuManager = this.BmAcciones;
+            this.gridApoyos.Name = "gridApoyos";
+            this.gridApoyos.Size = new System.Drawing.Size(818, 281);
+            this.gridApoyos.TabIndex = 4;
+            this.gridApoyos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridDatos});
             // 
             // gridDatos
             // 
-            this.gridDatos.GridControl = this.gridPredios;
+            this.gridDatos.GridControl = this.gridApoyos;
             this.gridDatos.Name = "gridDatos";
             this.gridDatos.OptionsFind.AlwaysVisible = true;
             this.gridDatos.OptionsFind.ShowCloseButton = false;
@@ -213,7 +213,7 @@
             // 
             // layoutControlItem1
             // 
-            this.layoutControlItem1.Control = this.gridPredios;
+            this.layoutControlItem1.Control = this.gridApoyos;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 50);
             this.layoutControlItem1.Name = "layoutControlItem1";
             this.layoutControlItem1.Size = new System.Drawing.Size(822, 285);
@@ -236,7 +236,7 @@
             this.Load += new System.EventHandler(this.FrmListaApoyos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridPredios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridApoyos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridDatos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BmAcciones)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
@@ -262,7 +262,7 @@
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
         private DevExpress.XtraBars.BarDockControl barDockControlLeft;
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
-        private DevExpress.XtraGrid.GridControl gridPredios;
+        private DevExpress.XtraGrid.GridControl gridApoyos;
         private DevExpress.XtraGrid.Views.Grid.GridView gridDatos;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
     }
