@@ -323,7 +323,6 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.IsMdiContainer = true;
-            this.MdiChildCaptionFormatString = "{0} - {0}";
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Informes";

@@ -107,30 +107,58 @@ namespace SistemaInformes.Catalogos
                 CboEstado.Properties.ValueMember = "IdEstado";
                 CboEstado.Properties.PopulateColumns();
                 CboEstado.Properties.Columns["IdEstado"].Visible = false;
-                CboEstado.EditValue = 0;
+                CboEstado.EditValue = 31;
             }
             catch (Exception ex)
             {
-                XtraMessageBox.Show(ex.Message);
+                XtraMessageBox.Show(ex.Message, "Cargar Estados", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
         
-        public void CargarMunicipios()
+        public void CargarMunicipios(int idEstado)
         {
             try
             {
-                CboMunicipio.Properties.DataSource = bllMunicipios.ListarTodos();
+                CboMunicipio.Properties.DataSource = bllMunicipios.GetByIdEstado(idEstado);
                 CboMunicipio.Properties.DisplayMember = "Nombre";
                 CboMunicipio.Properties.ValueMember = "IdMunicipio";
                 CboMunicipio.Properties.PopulateColumns();
                 CboMunicipio.Properties.Columns["IdEstado"].Visible = false;
-                CboMunicipio.EditValue = 0;
+                CboMunicipio.Properties.Columns["IdMunicipio"].Visible = false;
+                CboMunicipio.EditValue = 1;
             }
             catch (Exception ex)
             {
-
-                throw;
+                XtraMessageBox.Show(ex.Message, "Cargar Municipios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        public void CargarLocalidades(int idMunicipio)
+        {
+            try
+            {
+                CboLocalidad.Properties.DataSource = bllLocalidades.GetByIdMunicipio(idMunicipio);
+                CboLocalidad.Properties.DisplayMember = "Nombre";
+                CboLocalidad.Properties.ValueMember = "IdLocalidad";
+                CboLocalidad.Properties.PopulateColumns();
+                CboLocalidad.Properties.Columns["IdLocalidad"].Visible = false;
+                CboLocalidad.Properties.Columns["IdMunicipio"].Visible = false;
+                CboLocalidad.ItemIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                XtraMessageBox.Show(ex.Message, "Cargar Localidades", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        private void CboEstado_EditValueChanged_1(object sender, EventArgs e)
+        {
+            CargarMunicipios(int.Parse(CboEstado.EditValue.ToString()));
+        }
+
+        private void CboMunicipio_EditValueChanged(object sender, EventArgs e)
+        {
+            CargarLocalidades(int.Parse(CboMunicipio.EditValue.ToString()));
         }
     }
 }
