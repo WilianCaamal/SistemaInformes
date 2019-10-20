@@ -16,7 +16,7 @@ namespace CapaDatos
 
         public List<Municipios> GetByIdEstado(int IdEstado)
         {
-            return Db.GetContext().Municipios.Where(m => m.IdEstado.Equals(IdEstado)).ToList();
+            return Db.GetContext().Municipios.Where(m => m.IdEstado == IdEstado).ToList();
         }
     }
 }
