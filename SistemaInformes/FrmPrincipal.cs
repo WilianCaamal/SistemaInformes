@@ -41,7 +41,7 @@ namespace SistemaInformes
 
         private void BtnApoyos_Click(object sender, EventArgs e)
         {
-            FrmApoyos frmApoyos = new FrmApoyos { MdiParent = this, Text = "Lista de Apoyos", Dock=DockStyle.Fill };
+            FrmListaApoyos frmApoyos = new FrmListaApoyos { MdiParent = this, Text = "Lista de Apoyos", Dock=DockStyle.Fill };
             HelperWindows.OpenForm(frmApoyos,HelperWindows.ModeOpen.Normal);
         }
 

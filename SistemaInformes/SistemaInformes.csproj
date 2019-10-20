@@ -82,6 +82,12 @@
     <Compile Include="Catalogos\FrmBeneficiarios.Designer.cs">
       <DependentUpon>FrmBeneficiarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Catalogos\FrmListaApoyos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogos\FrmListaApoyos.Designer.cs">
+      <DependentUpon>FrmListaApoyos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Catalogos\FrmListaBeneficiarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogos\FrmBeneficiarios.resx">
       <DependentUpon>FrmBeneficiarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogos\FrmListaApoyos.resx">
+      <DependentUpon>FrmListaApoyos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogos\FrmListaBeneficiarios.resx">
       <DependentUpon>FrmListaBeneficiarios.cs</DependentUpon>
@@ -336,6 +345,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\groups_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paycheque_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
