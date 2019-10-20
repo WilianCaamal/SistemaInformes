@@ -57,7 +57,7 @@ namespace Entidades
     #endregion
 		
 		public DataEntitiesDataContext() : 
-				base(global::Entidades.Properties.Settings.Default.SistemaInformesConnectionString1, mappingSource)
+				base(global::Entidades.Properties.Settings.Default.SistemaInformesConnectionString2, mappingSource)
 		{
 			OnCreated();
 		}
@@ -155,6 +155,14 @@ namespace Entidades
 			get
 			{
 				return this.GetTable<Predios>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Apoyos> Apoyos
+		{
+			get
+			{
+				return this.GetTable<Apoyos>();
 			}
 		}
 	}
@@ -1986,6 +1994,159 @@ namespace Entidades
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Apoyos")]
+	public partial class Apoyos
+	{
+		
+		private int _IdApoyo;
+		
+		private System.DateTime _FechaRegistro;
+		
+		private System.Nullable<System.DateTime> _FechaEdicion;
+		
+		private System.Nullable<System.DateTime> _FechaEliminado;
+		
+		private string _Programa;
+		
+		private string _Nombre;
+		
+		private int _Anio;
+		
+		private bool _Estatus;
+		
+		public Apoyos()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdApoyo", AutoSync=AutoSync.Always, DbType="Int NOT NULL IDENTITY", IsDbGenerated=true)]
+		public int IdApoyo
+		{
+			get
+			{
+				return this._IdApoyo;
+			}
+			set
+			{
+				if ((this._IdApoyo != value))
+				{
+					this._IdApoyo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaRegistro", DbType="DateTime NOT NULL")]
+		public System.DateTime FechaRegistro
+		{
+			get
+			{
+				return this._FechaRegistro;
+			}
+			set
+			{
+				if ((this._FechaRegistro != value))
+				{
+					this._FechaRegistro = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaEdicion", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FechaEdicion
+		{
+			get
+			{
+				return this._FechaEdicion;
+			}
+			set
+			{
+				if ((this._FechaEdicion != value))
+				{
+					this._FechaEdicion = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FechaEliminado", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FechaEliminado
+		{
+			get
+			{
+				return this._FechaEliminado;
+			}
+			set
+			{
+				if ((this._FechaEliminado != value))
+				{
+					this._FechaEliminado = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Programa", DbType="VarChar(100)")]
+		public string Programa
+		{
+			get
+			{
+				return this._Programa;
+			}
+			set
+			{
+				if ((this._Programa != value))
+				{
+					this._Programa = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="VarChar(100) NOT NULL", CanBeNull=false)]
+		public string Nombre
+		{
+			get
+			{
+				return this._Nombre;
+			}
+			set
+			{
+				if ((this._Nombre != value))
+				{
+					this._Nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Anio", DbType="Int NOT NULL")]
+		public int Anio
+		{
+			get
+			{
+				return this._Anio;
+			}
+			set
+			{
+				if ((this._Anio != value))
+				{
+					this._Anio = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Estatus", DbType="Bit NOT NULL")]
+		public bool Estatus
+		{
+			get
+			{
+				return this._Estatus;
+			}
+			set
+			{
+				if ((this._Estatus != value))
+				{
+					this._Estatus = value;
+				}
 			}
 		}
 	}

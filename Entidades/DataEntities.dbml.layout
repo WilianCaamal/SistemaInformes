@@ -63,12 +63,18 @@
         <elementListCompartment Id="bf93c761-77fb-489b-acd5-25371416266b" absoluteBounds="5.515, 4.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(7.0625 : 3.4151025390625); (7.0625 : 4.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(7.0625 : 3.4151025390625); (7.0625 : 4.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/DataEntitiesDataContext/Asesores/Asesores_Predios" />
       <nodes>
         <classShapeMoniker Id="04d926f5-4318-4202-b757-94a588d38b7a" />
         <classShapeMoniker Id="9e594293-3a26-4986-ba7c-8986043eae13" />
       </nodes>
     </associationConnector>
+    <classShape Id="443c1190-4e6c-42f6-bb17-fc6b365d847a" absoluteBounds="3.125, 5.125, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/DataEntitiesDataContext/Apoyos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b254eca1-0215-4a41-8d97-5c29fd86ddd2" absoluteBounds="3.1399999999999997, 5.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

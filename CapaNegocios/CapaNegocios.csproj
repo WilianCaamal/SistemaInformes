@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BllApoyos.cs" />
     <Compile Include="BllBeneficiarios.cs" />
     <Compile Include="BllEstados.cs" />
     <Compile Include="BllLocalidades.cs" />
