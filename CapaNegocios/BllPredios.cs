@@ -16,9 +16,18 @@ namespace CapaNegocios
             return dal.ListarTodos();
         }
 
-        public bool Agregar(Predios predio)
+
+        public bool Guardar(Predios predio)
         {
-            return dal.Agregar(predio);
+            if(predio.IdPredio > 0)
+            {
+                return dal.Agregar(predio);
+            }
+            else
+            {
+                //return dal.Editar(predio);
+                return true;
+            }
         }
     }
 }

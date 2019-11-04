@@ -29,10 +29,18 @@ namespace CapaNegocios
             }
         }
 
-        public bool Agregar(Beneficiarios beneficiario)
+        public bool Guardar(Beneficiarios beneficiario)
         {
             BeneficiarioValido(beneficiario);
-            return dal.Agregar(beneficiario);
+            if (beneficiario.IdBeneficiario > 0)
+            {
+                return dal.Agregar(beneficiario);
+            }
+            else
+            {
+                beneficiario.FechaEdicion = DateTime.Today;
+                return dal.Editar(beneficiario);
+            }
         }
 
         public List<Beneficiarios> ListarTodos()
@@ -45,12 +53,7 @@ namespace CapaNegocios
             return dal.GetById(Id);
         }
 
-        public bool Editar(Beneficiarios beneficiario)
-        {
-            beneficiario.FechaEdicion = DateTime.Today;
-            BeneficiarioValido(beneficiario);
-            return dal.Editar(beneficiario);
-        }
+
 
         public bool Eliminar(int Id)
         {
